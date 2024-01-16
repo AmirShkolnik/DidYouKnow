@@ -134,6 +134,8 @@ Make sure to include things like git, GitHub, the program used to make your wire
 
 A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 
+[Favicon Creator](https://realfavicongenerator.net/)
+
 ## Deployment & Local Development
 
 👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
@@ -181,7 +183,7 @@ Who wrote the content for the website? Was it yourself - or have you made the si
 If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
 Pixabay
 ------
-[Prawny](https://pixabay.com/sv/illustrations/fr%C3%A5ga-hj%C3%A4lp-fr%C3%A5getecken-svar-st%C3%B6d-1127660/)- Favicon - Question Mark
+[Peggy_Marco](https://pixabay.com/sv/users/peggy_marco-1553824/)- Favicon - Question Mark
   
 ###  Acknowledgments
 
