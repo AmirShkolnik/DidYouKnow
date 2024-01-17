@@ -13,7 +13,7 @@ body {
 }
 
 #quiz {
-    max-width: 800px;
+    
     text-align: center;
 }
 
@@ -29,3 +29,29 @@ body {
     align-items: center;
  
 }
+ 
+    .quiz-button {
+        margin-bottom: 30px;
+    }
+    
+    .button {
+        background-color: #009CD1;
+        font-size: 25px;
+        color: #ffffff;
+        border: 2px solid #64498c;
+        border-radius: 10px;
+        font-family: 'Kaisei HarunoUmi', sans-serif;
+        font-weight: bold; 
+        padding: .75rem 1.65rem;
+        width: 80%;
+        max-width: 250px;
+        cursor: pointer;
+        margin: 20px 20px 0 20px;
+       
+    }
+    
+    .button:hover {
+        transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+        background-color: #64498c;
+        border: 5px solid #009CD1;
+    }
