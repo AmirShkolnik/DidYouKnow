@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-#quiz>.quiz-area {
+.quiz-area {
     background-color: rgba(255, 255, 255, 0.5);
     width: 90%;
     max-width: 760px;
@@ -31,7 +31,7 @@ body {
 
 }
 
-#quiz>.quiz-area>.quiz-button {
+.quiz-button {
   
     padding-top: 180px;
 
@@ -41,6 +41,7 @@ body {
     background-color: #009CD1;
     font-size: 25px;
     color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.6);
     border: 2px solid #64498c;
     border-radius: 10px;
     font-family: 'Kaisei HarunoUmi', sans-serif;
@@ -55,7 +56,7 @@ body {
 }
 
 .button:hover {
-    transform: perspective(500px) rotateY(calc(20deg*var(--_i, -1)));
+    transform: perspective(500px) rotateY(20deg);
     background-color: #64498c;
     border: 5px solid #009CD1;
 }
