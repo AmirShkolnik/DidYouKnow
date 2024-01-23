@@ -29,18 +29,24 @@
 <body>
   
 <section id="quiz">
-    <div class="quiz-area">
-        <div><h1 class="heading">Chose Your Animal?</h1></div>
+    <div id="quiz_area_box" class="quiz_area">
+        <div><h1 id="headline_home" class="heading">Welcome To The Jungel Quiz!</h1></div>
         <div class="quiz-button">
-            <button class='button' id='oceans-btn' aria-label="oceans">Oceans</button>
+            <button id="play" class='button' aria-label="play" onclick="rules()">Rules</button>
             <br>
-            <button class='button' id='animals-btn' aria-label="animals">Animals</button>
+            <button id='play_btn' class='button' aria-label="animals">Play</button>
             <br>
-            <button class='button' id='countries-btn' aria-label="countries">Countries</button>
+            <button id='back_btn' aria-label="countries" onclick="goBack()">Back</button>
         </div>
     </div>
     <div class="score-area"></div>
 </section>
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>

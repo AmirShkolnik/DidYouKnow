@@ -16,10 +16,11 @@ h1 {
     
     font-family: "Lemon", sans-serif;
     text-shadow: 2px 2px rgb(0, 0, 0, 0.6);
-    font-size: 44px;
+    font-size: 36px;
     color:#ffffff;
     padding-top: 0px;
 }
+
 
 #quiz {
 
@@ -27,7 +28,7 @@ h1 {
     
 }
 
-.quiz-area {
+.quiz_area {
     background-color: rgba(255, 255, 255, 0.5);
     width: 90%;
     max-width: 760px;
@@ -38,12 +39,13 @@ h1 {
     border-radius: 10px;
     align-items: center;
     margin-bottom: 0px;
+    position: relative;
 
 }
 
 .quiz-button {
   
-    padding-top: 0px;
+    padding-top: 40px;
 
 }
 
@@ -72,7 +74,47 @@ h1 {
     border: 5px solid #009CD1;
     box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
     background: url("/assets/images/test.jpg") no-repeat center center/cover;
+    line-height: 2;
+}
 
+.start_btn:hover {
+    transform: perspective(500px) rotateY(20deg);
+    background-color: #64498c;
+    border: 5px solid #009CD1;
+    box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
+    background: url("/assets/images/test.jpg") no-repeat center center/cover;
+
+}
+
+ #back_btn {
+    background-color: #009CD1;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.6);
+    border: 2px solid #64498c;
+    border-radius: 10px;
+    font-family: 'Kaisei HarunoUmi', sans-serif;
+    font-weight: bold;
+    padding: .75rem 1.65rem;
+    width: 80%;
+    max-width: 100px;
+    cursor: pointer;
+    margin: 20px 20px 0 20px;
+    box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
+    transition: all 0.1s;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    text-align: center;
+}
+
+#back_btn:hover {
+    transform: perspective(500px) rotateY(20deg);
+    background-color: #64498c;
+    border: 5px solid #009CD1;
+    box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
+    background: url("/assets/images/test.jpg") no-repeat center center/cover;
+    line-height: 2;
 }
 
 @media screen and (min-width: 800px) {
