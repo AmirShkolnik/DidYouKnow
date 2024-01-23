@@ -106,6 +106,8 @@ h1 {
     bottom: 10px;
     right: 0;
     text-align: center;
+    display: block;
+    z-index: 2;
 }
 
 #back_btn:hover {
@@ -115,6 +117,25 @@ h1 {
     box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
     background: url("/assets/images/test.jpg") no-repeat center center/cover;
     line-height: 2;
+}
+
+.rules_area {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    max-width: 760px;
+    height: 70vh;
+    max-height: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 0px;
+    position: relative;
+
+}
+
+#rules_hide {
+    display: none;
 }
 
 @media screen and (min-width: 800px) {

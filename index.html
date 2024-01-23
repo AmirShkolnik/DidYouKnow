@@ -29,18 +29,32 @@
 <body>
   
 <section id="quiz">
+    <!--Welcome Landing Page - Hide When Click On Buttons Rules and Play-->
     <div id="quiz_area_box" class="quiz_area">
         <div><h1 id="headline_home" class="heading">Welcome To The Jungel Quiz!</h1></div>
         <div class="quiz-button">
             <button id="rules_btn" class='button' aria-label="rules" onclick="rules()">Rules</button>
             <br>
-            <button id='play_btn' class='button' aria-label="play">Play</button>
-            <br>
-            <button id='back_btn' aria-label="back" onclick="goBack()">Back</button>
+            <button id='start_btn' class='button' aria-label="start">Start</button>
+    
         </div>
     </div>
-    <div class="score-area"></div>
+
+<!--Rules Text - Show When Click On Buttons Rules and Play-->
+    <div id="rules_hide" class="rules_area">
+        <div><h1 id="headline_rules" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
+        <div class="quiz-button">
+        <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
+            <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
+                <p>Right answers will appear green and wrong ones in red. Scores will appear right away.</p>
+                    <p>Ready to challenge yourself?</p>
+                    <button id='back_btn' aria-label="back" onclick="goBack()">Back</button>
+    </div>
+    </div>
 </section>
+
+
+
 
 
 
