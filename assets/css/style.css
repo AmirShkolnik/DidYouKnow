@@ -76,14 +76,16 @@ h1 {
     line-height: 2;
 }
 
-#start_btn:hover {
-    transform: perspective(500px) rotateY(20deg);
-    background-color: #64498c;
-    border: 5px solid #009CD1;
-    box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
-    background: url("/assets/images/test2.gif") no-repeat center center/cover;
-    line-height: 2;
-}
+
+    #start_btn:hover {
+        transform: perspective(500px) rotateY(20deg);
+        background-color: #64498c;
+        border: 5px solid #009CD1;
+        box-shadow: 2px 2px rgb(0, 0, 0, 0.6);
+        line-height: 2;
+        background: url("/assets/images/test2.gif") no-repeat center center/cover;
+    }
+
 
  #back_btn {
     background-color: #009CD1;
