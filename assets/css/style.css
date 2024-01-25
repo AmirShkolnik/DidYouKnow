@@ -5,7 +5,7 @@
 
 /* General Body */
 body {
-    background: linear-gradient(to bottom, #52843c, #e9ed60), url("../images/test2.gif") no-repeat center center/cover;
+    background: url("../images/jungle.webp") no-repeat center center/cover;
     font-family: "Kaisei HarunoUmi", sans-serif;
     width: 100%;
     height: 100vh;
@@ -15,9 +15,9 @@ body {
 h1 {
     
     font-family: "Lemon", sans-serif;
-    text-shadow: 2px 2px rgb(233, 237, 96, 0.6);
+    -webkit-text-stroke: 0.5px #be945b;
     font-size: 36px;
-    color:#52843c;
+    color:#e9ed60;
     padding-top: 20px;
 }
 
@@ -30,17 +30,20 @@ h1 {
 }
 
 .quiz_area {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(66, 47, 37, 0.8);
+    border: 2px solid #e9ed60;
     width: 90%;
     max-width: 760px;
     height: 90vh;
     max-height: 600px;
     text-align: center;
-    margin: auto;
+    margin-top: 20px; /* Set margin from the top */
+    margin-bottom: 0; /* Remove margin from the bottom */
     border-radius: 10px;
-    align-items: center;
-    margin-bottom: 0px;
     position: relative;
+    /* Center horizontally */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .quiz-button {
