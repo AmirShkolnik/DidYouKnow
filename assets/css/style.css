@@ -81,14 +81,7 @@ p {
      line-height: 2;
  }
 
- #back_btn {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    text-align: center;
-    display: block;
-    z-index: 2;
-}
+ 
 
 .rules_area {
     background-color: rgba(255, 255, 255, 0.5);
@@ -127,6 +120,15 @@ h1 {
   
     padding-top: 60px;
 
+}
+
+#back_btn {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    text-align: center;
+    display: block;
+    z-index: 2;
 }
 
 }
