@@ -13,7 +13,7 @@ function rules() {
     if (rulesAreabox) {
         // If it exists, set its innerHTML to the specified content
         rulesAreabox.innerHTML = `
-            <div><h1 id="headline_home" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
+            <div><h1 id="headline_rules" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
             <div class="quiz-button">
                 <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
                 <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
@@ -30,14 +30,13 @@ function rules() {
         let startAreabox = document.getElementById("quiz_area_box");
         if (startAreabox) {
             startAreabox.innerHTML = `
-                <div><h1 id="headline_home" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
+                <div><h1 id="headline_questions" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
                 <div class="quiz-button">
                     <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
                     <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
                     <p>Right answers will appear green and wrong ones in red. Scores will appear right away.</p>
                     <p>Ready to challenge yourself?</p>
                     <button id="timer" class="button" aria-label="timer">6</button>
-                    <br>
                     <br>
                     <button id="start_timer" class="button" aria-label="timer" onclick="goBack()">Home</button>
                 </div>

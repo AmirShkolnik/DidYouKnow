@@ -23,13 +23,34 @@ html {
     overflow-y: hidden;
 }
 
-h1 {
+#headline_home {
     
     font-family: "Lemon", sans-serif;
     -webkit-text-stroke: 0.5px #be945b;
     font-size: 36px;
     color:#e9ed60;
-    padding-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+#headline_rules {
+    
+    font-family: "Lemon", sans-serif;
+    -webkit-text-stroke: 0.5px #be945b;
+    font-size: 36px;
+    color:#e9ed60;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#headline_questions {
+    
+    font-family: "Lemon", sans-serif;
+    -webkit-text-stroke: 0.5px #be945b;
+    font-size: 36px;
+    color:#e9ed60;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 p {
@@ -53,8 +74,7 @@ p {
     border: 2px solid #e9ed60;
     width: 90%;
     max-width: 760px;
-    height: auto;
-    padding-bottom: 40px;
+    height: 90vh;
     text-align: center;
     margin-top: 20px; /* Set margin from the top */
     margin-bottom: 0px; /* Remove margin from the bottom */
@@ -63,12 +83,13 @@ p {
     /* Center horizontally */
     margin-left: auto;
     margin-right: auto;
+    line-height: normal; /* Add line-height property */
+  
 }
 
 .quiz-button {
   
-    padding-top: 0px;
-
+    
 }
 
 .quiz-button>.button {
@@ -84,9 +105,9 @@ p {
     width: 80%;
     max-width: 250px;
     cursor: pointer;
-    margin: 20px 20px 0 20px;
     box-shadow: 2px 2px rgb(233, 237, 96, 0.4);
     transition: all 0.1s;
+    margin: 20px 20px 0 20px;
 }
 
 .quiz-button>.button:hover {
