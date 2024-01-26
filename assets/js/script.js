@@ -16,9 +16,13 @@ function rules() {
             <h1 id="headline_rules" class="heading">Follow The Rules</h1>
             <div class="quiz-button">
                 <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
+                <br>
                 <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
+                <br>
                 <p>Right answers will appear green and wrong ones in red. Scores will appear right away.</p>
+                <br>
                 <p>Ready to challenge yourself?</p>
+                <br>
                 <button id="back_btn" class="button" aria-label="back" onclick="goBack()">Back</button>
             </div>
         `;
@@ -31,14 +35,16 @@ function start() {
     if (startAreabox) {
         startAreabox.innerHTML = `
               <h1 id="headline_questions" class="heading">Jungle Quiz</h1>
+              <h2>Questions</h2>
                 <div class="quiz-button">
-                    <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
-                    <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
-                    <p>Right answers will appear green and wrong ones in red. Scores will appear right away.</p>
-                    <p>Ready to challenge yourself?</p>
-                    <button id="timer" class="button" aria-label="timer">10</button>
-                    <br>
-                    <button id="start_timer" class="button" aria-label="timer" onclick="goBack()">Home</button>
+                <button class="answer">Answer 1</button>
+                <button class="answer">Answer 2</button>
+                <button class="answer">Answer 3</button>
+                <button class="answer">Answer 4</button>
+                <br>
+                <button id="timer" class="button" aria-label="timer">10</button>
+                <br>
+                <button id="start_timer" class="button" aria-label="timer" onclick="goBack()">Home</button>
                 </div>
             `;
 

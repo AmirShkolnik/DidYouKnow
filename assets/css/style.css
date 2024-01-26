@@ -11,6 +11,7 @@
 /* General Body */
 body {
     background: url("../images/jungle.webp") no-repeat center center/cover;
+    font-family: "Lemon", sans-serif;
 
 }
 
@@ -18,40 +19,6 @@ html {
 
     height: 100%;
 
-}
-
-#headline_home {
-    
-    font-family: "Lemon", sans-serif;
-    -webkit-text-stroke: 0.5px #be945b;
-    font-size: 36px;
-    color:#e9ed60;
-    margin-bottom: 20px;
-  
-}
-
-#headline_rules {
-    
-    font-family: "Lemon", sans-serif;
-    -webkit-text-stroke: 0.5px #be945b;
-    border-bottom: 1px solid #be945b;
-    font-size: 36px;
-    color:#e9ed60;
-    padding: 0 0 10px;
-    margin-bottom: 20px;
-  
-}
-
-#headline_questions {
-    
-    font-family: "Lemon", sans-serif;
-    -webkit-text-stroke: 0.5px #be945b;
-    border-bottom: 1px solid #be945b;
-    font-size: 36px;
-    color:#e9ed60;
-    padding: 0 0 10px;
-    margin-bottom: 20px;
- 
 }
 
 p {
@@ -74,12 +41,38 @@ p {
     background-color: rgba(66, 47, 37, 0.8);
     border: 2px solid #e9ed60;
     width: 90%;
-    max-width: 220px;
+    max-width: 250px;
     margin: 40px auto 0;
     border-radius: 10px;
     line-height: normal;
     padding: 20px;
   
+}
+
+.quiz_area>h1 {
+    
+    font-family: "Lemon", sans-serif;
+    -webkit-text-stroke: 0.5px #be945b;
+    border-bottom: 1px solid #be945b;
+    font-size: 36px;
+    color:#e9ed60;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+ 
+}
+
+.quiz_area>h2 {
+
+    font-family: "Lemon", sans-serif;
+    -webkit-text-stroke: 0.5px #be945b;
+    font-size: 28px;
+    color:#e9ed60;
+    padding: 0 0 10px;
+
+}
+
+.answers {
+
 }
 
 .quiz-button>.button {
@@ -143,8 +136,8 @@ p {
 @media screen and (min-width: 800px) {
 
     .quiz_area {
-        
-        max-width: 600px;
+
+        max-width: 760px;
         margin: 100px auto 0;
       
     }
@@ -164,11 +157,9 @@ p {
 }
 
 #back_btn {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
+    
     text-align: center;
-    display: block;
+   
     z-index: 2;
 }
 
