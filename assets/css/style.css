@@ -71,7 +71,18 @@ p {
 
 }
 
-.answers {
+.answer {
+    background:	#52843c;
+    color:#e9ed60;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #e9ed60;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
 
 }
 
