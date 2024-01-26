@@ -4,23 +4,20 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
+    font-family: "Kaisei HarunoUmi", sans-serif;
+    box-sizing: border-box;
 }
 
 /* General Body */
 body {
     background: url("../images/jungle.webp") no-repeat center center/cover;
-    font-family: "Kaisei HarunoUmi", sans-serif;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+
 }
 
 html {
 
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
 }
 
 #headline_home {
@@ -29,28 +26,32 @@ html {
     -webkit-text-stroke: 0.5px #be945b;
     font-size: 36px;
     color:#e9ed60;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+  
 }
 
 #headline_rules {
     
     font-family: "Lemon", sans-serif;
     -webkit-text-stroke: 0.5px #be945b;
+    border-bottom: 1px solid #be945b;
     font-size: 36px;
     color:#e9ed60;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+  
 }
 
 #headline_questions {
     
     font-family: "Lemon", sans-serif;
     -webkit-text-stroke: 0.5px #be945b;
+    border-bottom: 1px solid #be945b;
     font-size: 36px;
     color:#e9ed60;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+ 
 }
 
 p {
@@ -73,23 +74,12 @@ p {
     background-color: rgba(66, 47, 37, 0.8);
     border: 2px solid #e9ed60;
     width: 90%;
-    max-width: 760px;
-    height: 90vh;
-    text-align: center;
-    margin-top: 20px; /* Set margin from the top */
-    margin-bottom: 0px; /* Remove margin from the bottom */
+    max-width: 220px;
+    margin: 40px auto 0;
     border-radius: 10px;
-    position: relative;
-    /* Center horizontally */
-    margin-left: auto;
-    margin-right: auto;
-    line-height: normal; /* Add line-height property */
+    line-height: normal;
+    padding: 20px;
   
-}
-
-.quiz-button {
-  
-    
 }
 
 .quiz-button>.button {
@@ -152,10 +142,12 @@ p {
 
 @media screen and (min-width: 800px) {
 
-h1 {
-    
-    padding-top: 30px;
-}
+    .quiz_area {
+        
+        max-width: 600px;
+        margin: 100px auto 0;
+      
+    }
 
 .quiz-button {
   

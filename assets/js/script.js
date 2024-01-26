@@ -13,7 +13,7 @@ function rules() {
     if (rulesAreabox) {
         // If it exists, set its innerHTML to the specified content
         rulesAreabox.innerHTML = `
-            <div><h1 id="headline_rules" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
+            <h1 id="headline_rules" class="heading">Follow The Rules</h1>
             <div class="quiz-button">
                 <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
                 <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
@@ -25,50 +25,50 @@ function rules() {
     }
 }
 
-    function start() {
-        "use strict";
-        let startAreabox = document.getElementById("quiz_area_box");
-        if (startAreabox) {
-            startAreabox.innerHTML = `
-                <div><h1 id="headline_questions" class="heading">How To Survive the Jungle Quiz Safari!</h1></div>
+function start() {
+    "use strict";
+    let startAreabox = document.getElementById("quiz_area_box");
+    if (startAreabox) {
+        startAreabox.innerHTML = `
+              <h1 id="headline_questions" class="heading">Jungle Quiz</h1>
                 <div class="quiz-button">
                     <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
                     <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
                     <p>Right answers will appear green and wrong ones in red. Scores will appear right away.</p>
                     <p>Ready to challenge yourself?</p>
-                    <button id="timer" class="button" aria-label="timer">6</button>
+                    <button id="timer" class="button" aria-label="timer">10</button>
                     <br>
                     <button id="start_timer" class="button" aria-label="timer" onclick="goBack()">Home</button>
                 </div>
             `;
-            
-            // Get the timer element
-            let timerElement = document.getElementById("timer");
 
-            // Get the start timer button element
+        // Get the timer element
+        let timerElement = document.getElementById("timer");
+
+        // Get the start timer button element
         let startTimerButton = document.getElementById("start_timer");
-  
-            // Set the initial time
-            let currentTime = parseInt(timerElement.innerHTML);
 
-            // Define the countdown function
-            function countdown() {
-                currentTime--; // Decrement the current time by 1
-                timerElement.innerHTML = currentTime; // Update the timer display
+        // Set the initial time
+        let currentTime = parseInt(timerElement.innerHTML);
 
-                // If countdown reaches 0, stop the timer
-                if (currentTime <= 0) {
-                    clearInterval(intervalId);
-                    timerElement.innerHTML = "Time's up!";
-                    startTimerButton.style.display = "block";
+        // Display initial time
+        timerElement.innerHTML = "Time left: " + currentTime;
 
-                }
+        // Define the countdown function
+        function countdown() {
+            currentTime--; // Decrement the current time by 1
+            timerElement.innerHTML = "Time left: " + currentTime; // Update the timer display with the text "Time left:"
+
+            // If countdown reaches 0, stop the timer
+            if (currentTime <= 0) {
+                clearInterval(intervalId);
+                timerElement.innerHTML = "Time's up!";
+                startTimerButton.style.display = "block";
+
             }
-
-            // Call the countdown function every second (1000 milliseconds)
-            const intervalId = setInterval(countdown, 1000);
         }
+
+        // Call the countdown function every second (1000 milliseconds)
+        const intervalId = setInterval(countdown, 1000);
     }
-    
-
-
+}
