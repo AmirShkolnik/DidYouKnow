@@ -48,6 +48,7 @@ const questions = [
 
 const questionAreabox = document.getElementById("question_area_box");
 const quizAreabox = document.getElementById("quiz_area_box");
+const nextButton = document.getElementById("next-btn");
 const questionElement = document.getElementById("question");
 const quizButton = document.getElementById("quizbutton");
 
