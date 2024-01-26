@@ -1,47 +1,101 @@
-const questions = [
-    {
+const questions = [{
         question: "What is the largest animal in the jungle?",
-        answers: [
-            { text: "Elephant", correct: true },
-            { text: "Gorilla", correct: false },
-            { text: "Hippopotamus", correct: false },
-            { text: "Tiger", correct: false },
+        answers: [{
+                text: "Elephant",
+                correct: true
+            },
+            {
+                text: "Gorilla",
+                correct: false
+            },
+            {
+                text: "Hippopotamus",
+                correct: false
+            },
+            {
+                text: "Tiger",
+                correct: false
+            },
         ]
     },
     {
         question: "What is the tallest tree found in the jungle?",
-        answers: [
-            { text: "Oak", correct: false },
-            { text: "Baobab", correct: false },
-            { text: "Redwood", correct: false },
-            { text: "Kapok", correct: true },
+        answers: [{
+                text: "Oak",
+                correct: false
+            },
+            {
+                text: "Baobab",
+                correct: false
+            },
+            {
+                text: "Redwood",
+                correct: false
+            },
+            {
+                text: "Kapok",
+                correct: true
+            },
         ]
     },
     {
         question: "Which bird is known for imitating sounds and voices?",
-        answers: [
-            { text: "Hawk", correct: false },
-            { text: "Parrot", correct: true },
-            { text: "Toucan", correct: false },
-            { text: "Owl", correct: false },
+        answers: [{
+                text: "Hawk",
+                correct: false
+            },
+            {
+                text: "Parrot",
+                correct: true
+            },
+            {
+                text: "Toucan",
+                correct: false
+            },
+            {
+                text: "Owl",
+                correct: false
+            },
         ]
     },
     {
         question: "What is the primary source of food for many jungle animals?",
-        answers: [
-            { text: "Grass", correct: false },
-            { text: "Fruits", correct: true },
-            { text: "Insects", correct: false },
-            { text: "Fish", correct: false },
+        answers: [{
+                text: "Grass",
+                correct: false
+            },
+            {
+                text: "Fruits",
+                correct: true
+            },
+            {
+                text: "Insects",
+                correct: false
+            },
+            {
+                text: "Fish",
+                correct: false
+            },
         ]
     },
     {
         question: "Which is the most dangerous animal in the jungle?",
-        answers: [
-            { text: "Lion", correct: false },
-            { text: "Anaconda", correct: false },
-            { text: "Crocodile", correct: true },
-            { text: "Rhino", correct: false },
+        answers: [{
+                text: "Lion",
+                correct: false
+            },
+            {
+                text: "Anaconda",
+                correct: false
+            },
+            {
+                text: "Crocodile",
+                correct: true
+            },
+            {
+                text: "Rhino",
+                correct: false
+            },
         ]
     }
 ];
@@ -56,7 +110,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function start() {
-    
+
     currentQuestionIndex = 0;
     score = 0;
     questionAreabox.style.display = "block";
@@ -64,11 +118,11 @@ function start() {
     nextButton.innerHTML = "Next";
     showQuestion();
     countdown();
-    
+
 }
 
 function showQuestion() {
-resetState();
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
 
@@ -79,17 +133,17 @@ resetState();
         newButton.innerHTML = answer.text;
         newButton.classList.add("answerbutton");
         quizButton.appendChild(newButton);
-        if(answer.correct){
-    newButton.dataset.correct = answer.correct;
+        if (answer.correct) {
+            newButton.dataset.correct = answer.correct;
         }
-        newButton.addEventListener("click", selectAnswer)
+        newButton.addEventListener('click', selectAnswer)
     });
 }
 
-function resetState () {
+function resetState() {
 
     nextButton.style.display = "none";
-    while(quizButton.firstChild) {
+    while (quizButton.firstChild) {
         quizButton.removeChild(quizButton.firstChild);
     }
 }
@@ -97,22 +151,28 @@ function resetState () {
 function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect) {
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
-    }else{
+    } else {
         selectedBtn.classList.add("incorrect");
     }
-    }
-
-// This function populates the 'quiz_area_box' element with quiz rules and instructions.
-function rules() {
-    "use strict";
-    // Get the element with the id 'quiz_area_box'
-    let rulesAreabox = document.getElementById("quiz_area_box");
-    // Check if the 'quiz_area_box' element exists
-    if (rulesAreabox) {
-        // If it exists, set its innerHTML to the specified content
-        rulesAreabox.innerHTML = `
+    Array.from(answerButtons.children).forEach(button => {
+                if (button.dataset.correct === "true") {
+                    button.classList.add("correct");
+                }
+                button.disabled = true;
+            });
+            nextButton.style.display = "block";
+        }
+            // This function populates the 'quiz_area_box' element with quiz rules and instructions.
+            function rules() {
+                "use strict";
+                // Get the element with the id 'quiz_area_box'
+                let rulesAreabox = document.getElementById("quiz_area_box");
+                // Check if the 'quiz_area_box' element exists
+                if (rulesAreabox) {
+                    // If it exists, set its innerHTML to the specified content
+                    rulesAreabox.innerHTML = `
             <h1 id="headline_rules" class="heading">Follow The Rules</h1>
             <div class="quiz-button">
                 <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
@@ -126,40 +186,40 @@ function rules() {
                 <button id="back_btn" class="button" aria-label="back" onclick="goBack()">Back</button>
             </div>
         `;
-    }
-}
-
-        // Get the timer element
-        let timerElement = document.getElementById("timer");
-
-        // Get the start timer button element
-        let startTimerButton = document.getElementById("start_timer");
-
-        // Set the initial time
-        let currentTime = parseInt(timerElement.innerHTML);
-
-        // Display initial time
-        timerElement.innerHTML = "Time left: " + currentTime;
-
-        // Define the countdown function
-        function countdown() {
-            currentTime--; // Decrement the current time by 1
-            timerElement.innerHTML = "Time left: " + currentTime; // Update the timer display with the text "Time left:"
-
-            // If countdown reaches 0, stop the timer
-            if (currentTime <= 0) {
-                clearInterval(intervalId);
-                timerElement.innerHTML = "Time's up!";
-                startTimerButton.style.display = "block";
-
+                }
             }
-        }
 
-        // Call the countdown function every second (1000 milliseconds)
-        const intervalId = setInterval(countdown, 1000);
+            // Get the timer element
+            let timerElement = document.getElementById("timer");
 
-// This function reloads the current page when called, effectively acting as a "go back" action.
-function goBack() {
-    'use strict';
-    window.location.reload();
-}
+            // Get the start timer button element
+            let startTimerButton = document.getElementById("start_timer");
+
+            // Set the initial time
+            let currentTime = parseInt(timerElement.innerHTML);
+
+            // Display initial time
+            timerElement.innerHTML = "Time left: " + currentTime;
+
+            // Define the countdown function
+            function countdown() {
+                currentTime--; // Decrement the current time by 1
+                timerElement.innerHTML = "Time left: " + currentTime; // Update the timer display with the text "Time left:"
+
+                // If countdown reaches 0, stop the timer
+                if (currentTime <= 0) {
+                    clearInterval(intervalId);
+                    timerElement.innerHTML = "Time's up!";
+                    startTimerButton.style.display = "block";
+
+                }
+            }
+
+            // Call the countdown function every second (1000 milliseconds)
+            const intervalId = setInterval(countdown, 1000);
+
+            // This function reloads the current page when called, effectively acting as a "go back" action.
+            function goBack() {
+                'use strict';
+                window.location.reload();
+            }
