@@ -1,8 +1,56 @@
-// This function reloads the current page when called, effectively acting as a "go back" action.
-function goBack() {
-    'use strict';
-    window.location.reload();
-}
+const questions = [
+    {
+        Question: "What is the largest animal in the jungle?",
+        answers: [
+{ text: "Elephant", correct: true},
+{ text: "Gorilla", correct: false},
+{ text: "Hippopotamus", correct: false},
+{ text: "Tiger", correct: false},
+
+        ]
+    },
+    {
+        Question: "What is the tallest tree found in the jungle?",
+        answers: [
+{ text: "Oak", correct: false},
+{ text: "Baobab", correct: false},
+{ text: "Redwood", correct: false},
+{ text: "Kapok", correct: true},
+
+        ]
+    },
+    {
+        Question: "Which bird is known for imitating sounds and voices?",
+        answers: [
+{ text: "Hawk", correct: false},
+{ text: "Parrot", correct: true},
+{ text: "Toucan", correct: false},
+{ text: "Owl", correct: false},
+
+        ]
+    },
+    {
+        Question: "What is the primary source of food for many jungle animals?",
+        answers: [
+{ text: "Grass", correct: false},
+{ text: "Fruits", correct: true},
+{ text: "Insects", correct: false},
+{ text: "Fish", correct: false},
+
+        ]
+    },
+    {
+        Question: "Which is the most dangerous animal in the jungle?",
+        answers: [
+{ text: "Lion", correct: false},
+{ text: "Anaconda", correct: false},
+{ text: "Crocodile", correct: true},
+{ text: "Rhino", correct: false},
+
+        ]
+    }
+
+]
 
 // This function populates the 'quiz_area_box' element with quiz rules and instructions.
 function rules() {
@@ -77,4 +125,10 @@ function start() {
         // Call the countdown function every second (1000 milliseconds)
         const intervalId = setInterval(countdown, 1000);
     }
+}
+
+// This function reloads the current page when called, effectively acting as a "go back" action.
+function goBack() {
+    'use strict';
+    window.location.reload();
 }
