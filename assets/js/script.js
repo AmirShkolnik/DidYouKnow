@@ -1,56 +1,94 @@
 const questions = [
     {
-        Question: "What is the largest animal in the jungle?",
+        question: "What is the largest animal in the jungle?",
         answers: [
-{ text: "Elephant", correct: true},
-{ text: "Gorilla", correct: false},
-{ text: "Hippopotamus", correct: false},
-{ text: "Tiger", correct: false},
-
+            { text: "Elephant", correct: true },
+            { text: "Gorilla", correct: false },
+            { text: "Hippopotamus", correct: false },
+            { text: "Tiger", correct: false },
         ]
     },
     {
-        Question: "What is the tallest tree found in the jungle?",
+        question: "What is the tallest tree found in the jungle?",
         answers: [
-{ text: "Oak", correct: false},
-{ text: "Baobab", correct: false},
-{ text: "Redwood", correct: false},
-{ text: "Kapok", correct: true},
-
+            { text: "Oak", correct: false },
+            { text: "Baobab", correct: false },
+            { text: "Redwood", correct: false },
+            { text: "Kapok", correct: true },
         ]
     },
     {
-        Question: "Which bird is known for imitating sounds and voices?",
+        question: "Which bird is known for imitating sounds and voices?",
         answers: [
-{ text: "Hawk", correct: false},
-{ text: "Parrot", correct: true},
-{ text: "Toucan", correct: false},
-{ text: "Owl", correct: false},
-
+            { text: "Hawk", correct: false },
+            { text: "Parrot", correct: true },
+            { text: "Toucan", correct: false },
+            { text: "Owl", correct: false },
         ]
     },
     {
-        Question: "What is the primary source of food for many jungle animals?",
+        question: "What is the primary source of food for many jungle animals?",
         answers: [
-{ text: "Grass", correct: false},
-{ text: "Fruits", correct: true},
-{ text: "Insects", correct: false},
-{ text: "Fish", correct: false},
-
+            { text: "Grass", correct: false },
+            { text: "Fruits", correct: true },
+            { text: "Insects", correct: false },
+            { text: "Fish", correct: false },
         ]
     },
     {
-        Question: "Which is the most dangerous animal in the jungle?",
+        question: "Which is the most dangerous animal in the jungle?",
         answers: [
-{ text: "Lion", correct: false},
-{ text: "Anaconda", correct: false},
-{ text: "Crocodile", correct: true},
-{ text: "Rhino", correct: false},
-
+            { text: "Lion", correct: false },
+            { text: "Anaconda", correct: false },
+            { text: "Crocodile", correct: true },
+            { text: "Rhino", correct: false },
         ]
     }
+];
 
-]
+const questionAreabox = document.getElementById("question_area_box");
+const quizAreabox = document.getElementById("quiz_area_box");
+const questionElement = document.getElementById("question");
+const quizButton = document.getElementById("quizbutton");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function start() {
+    
+    currentQuestionIndex = 0;
+    score = 0;
+    questionAreabox.style.display = "block";
+    quizAreabox.style.display = "none";
+    showQuestion();
+    countdown();
+    
+}
+
+function showQuestion() {
+
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const newButton = document.createElement("newbutton");
+        newButton.innerHTML = answer.text;
+        newButton.classList.add("answerbutton");
+        quizButton.appendChild(newButton);
+    });
+}
+
+function resetState () {
+
+    nextButton.style.display = "none";
+    while(quizButton.firstChild) {
+        quizButton.removeChild(answerButtons.firstChild);
+    }
+}
+
+
 
 // This function populates the 'quiz_area_box' element with quiz rules and instructions.
 function rules() {
@@ -76,25 +114,6 @@ function rules() {
         `;
     }
 }
-
-function start() {
-    "use strict";
-    let startAreabox = document.getElementById("quiz_area_box");
-    if (startAreabox) {
-        startAreabox.innerHTML = `
-              <h1 id="headline_questions" class="heading">Jungle Quiz</h1>
-              <h2>Questions</h2>
-                <div class="quiz-button">
-                <button class="answer">Answer 1</button>
-                <button class="answer">Answer 2</button>
-                <button class="answer">Answer 3</button>
-                <button class="answer">Answer 4</button>
-                <br>
-                <button id="timer" class="button" aria-label="timer">10</button>
-                <br>
-                <button id="start_timer" class="button" aria-label="timer" onclick="goBack()">Home</button>
-                </div>
-            `;
 
         // Get the timer element
         let timerElement = document.getElementById("timer");
@@ -124,8 +143,6 @@ function start() {
 
         // Call the countdown function every second (1000 milliseconds)
         const intervalId = setInterval(countdown, 1000);
-    }
-}
 
 // This function reloads the current page when called, effectively acting as a "go back" action.
 function goBack() {
