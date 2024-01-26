@@ -86,6 +86,14 @@ p {
 
 }
 
+.answer:hover {
+
+    background:	#e9ed60;
+    color: #422f25;
+
+}
+
+
 .quiz-button>.button {
     background-color: #52843c;
     font-size: 25px;
@@ -107,7 +115,7 @@ p {
 .quiz-button>.button:hover {
     transform: perspective(500px) rotateY(20deg);
     border: 5px solid #be945b;
-     line-height: 2;
+    line-height: 2;
  }
 
  #start_timer {
