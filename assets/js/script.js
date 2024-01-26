@@ -61,13 +61,14 @@ function start() {
     score = 0;
     questionAreabox.style.display = "block";
     quizAreabox.style.display = "none";
+    nextButton.innerHTML = "Next";
     showQuestion();
     countdown();
     
 }
 
 function showQuestion() {
-
+resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
 
@@ -78,6 +79,10 @@ function showQuestion() {
         newButton.innerHTML = answer.text;
         newButton.classList.add("answerbutton");
         quizButton.appendChild(newButton);
+        if(answer.correct){
+    newButton.dataset.correct = answer.correct;
+        }
+        newButton.addEventListener("click", selectAnswer)
     });
 }
 
@@ -85,11 +90,19 @@ function resetState () {
 
     nextButton.style.display = "none";
     while(quizButton.firstChild) {
-        quizButton.removeChild(answerButtons.firstChild);
+        quizButton.removeChild(quizButton.firstChild);
     }
 }
 
-
+function selectAnswer(e){
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect) {
+        selectedBtn.classList.add("correct");
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+    }
 
 // This function populates the 'quiz_area_box' element with quiz rules and instructions.
 function rules() {
