@@ -83,6 +83,7 @@ p {
     text-align: left;
     border-radius: 6px;
     cursor: pointer;
+    transition: all 0.3s;
 
 }
 
