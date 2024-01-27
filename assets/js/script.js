@@ -159,7 +159,7 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.innerHTML = "The Answer Is: " + selectedBtn.innerHTML;
         selectedBtn.classList.add("correct");
-        score++
+        score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -175,6 +175,28 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
+
+function handelNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    }else{
+        showScore();
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+if(currentQuestionIndex < questions.length){handelNextButton();}else{
+    start();
+}
+
+} );
 // Get the timer element
 let timerElement = document.getElementById("timer");
 
