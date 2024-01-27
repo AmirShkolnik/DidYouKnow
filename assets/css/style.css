@@ -66,7 +66,11 @@ p {
  
 }
 
-.quiz_area>h2 {
+.quiz{
+    padding: 20px 0;
+}
+
+h2 {
 
     font-family: "Lemon", sans-serif;
     -webkit-text-stroke: 0.5px #be945b;
@@ -76,7 +80,7 @@ p {
 
 }
 
-.button {
+.ctrl-button {
     background-color: #52843c;
     font-size: 25px;
     color: #e9ed60;
@@ -94,7 +98,7 @@ p {
     margin: 20px 20px 0 20px;
 }
 
-.button:hover {
+.ctrl-button:hover {
     transform: perspective(500px) rotateY(20deg);
     border: 5px solid #be945b;
     line-height: 2;
@@ -113,14 +117,15 @@ p {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s;
-
 }
 
-.answerbutton:hover {
+.answerbutton:hover:not([disabled]){
 
     background:	#e9ed60;
     color: #422f25;
-
+}
+.answerbutton:disabled{
+    cursor: no-drop;
 }
 
 .quiz-button>.button {

@@ -129,14 +129,14 @@ function showQuestion() {
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
-        const newButton = document.createElement("newbutton");
-        newButton.innerHTML = answer.text;
-        newButton.classList.add("answerbutton");
-        quizButton.appendChild(newButton);
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("answerbutton");
+        quizButton.appendChild(button);
         if (answer.correct) {
-            newButton.dataset.correct = answer.correct;
+            button.dataset.correct = answer.correct;
         }
-        newButton.addEventListener('click', selectAnswer)
+        button.addEventListener('click', selectAnswer)
     });
 }
 
