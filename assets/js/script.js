@@ -159,6 +159,7 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.innerHTML = "The Answer Is: " + selectedBtn.innerHTML;
         selectedBtn.classList.add("correct");
+        score++
     } else {
         selectedBtn.classList.add("incorrect");
     }
