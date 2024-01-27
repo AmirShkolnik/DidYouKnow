@@ -117,8 +117,7 @@ function start() {
     quizAreabox.style.display = "none";
     nextButton.innerHTML = "Next";
     showQuestion();
-
-    countdown();
+    
 
 }
 
@@ -129,21 +128,19 @@ function showQuestion() {
 
     // For exp. - 1. What is the largest animal in the jungle?
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("answerbutton");
         quizButton.appendChild(button);
 
-
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener('click', selectAnswer)
+       
     });
 }
-
 
 function resetState() {
 // Remove previous answers
@@ -189,6 +186,7 @@ function handelNextButton(){
     }else{
         showScore();
     }
+    
 }
 
 nextButton.addEventListener("click", ()=>{
@@ -197,35 +195,6 @@ if(currentQuestionIndex < questions.length){handelNextButton();}else{
 }
 
 } );
-// Get the timer element
-let timerElement = document.getElementById("timer");
-
-// Get the start timer button element
-let startTimerButton = document.getElementById("start_timer");
-
-// Set the initial time
-let currentTime = parseInt(timerElement.innerHTML);
-
-// Display initial time
-timerElement.innerHTML = "Time left: " + currentTime;
-
-// Define the countdown function
-function countdown() {
-    currentTime--; // Decrement the current time by 1
-    timerElement.innerHTML = "Time left: " + currentTime; // Update the timer display with the text "Time left:"
-
-    // If countdown reaches 0, stop the timer
-    if (currentTime <= 0) {
-        clearInterval(intervalId);
-        timerElement.innerHTML = "Time's up!";
-        startTimerButton.style.display = "block";
-
-    }
-}
-
-// Call the countdown function every second (1000 milliseconds)
-const intervalId = setInterval(countdown, 1000);
-
 
 // This function populates the 'quiz_area_box' element with quiz rules and instructions.
 function rules() {
@@ -257,4 +226,37 @@ function goBack() {
     'use strict';
     window.location.reload();
 }
+
+ // Get the timer element
+ let timerElement = document.getElementById('timer');
+  
+ // Set the initial time
+ let currentTime = parseInt(timerElement.innerHTML);
+
+ // Define the countdown function
+ function countdown() {
+     currentTime--; // Decrement the current time by 1
+     timerElement.innerHTML = "Time left: " + currentTime; // Update the timer display with the text "Time left:"
+
+     // If countdown reaches 0, stop the timer
+     if (currentTime <= 0) {
+         clearInterval(intervalId);
+         timerElement.innerHTML = "Time's up!";
+         startTimerButton.style.display = "block";
+         
+     }
+ }
+
+ // Call the countdown function every second (1000 milliseconds)
+ const intervalId = setInterval(countdown, 1000);
+
+// Function to stop the timer
+function stopTimer() {
+    clearInterval(intervalId); // Clear the interval
+}
+
+ // Event listener to stop the timer when user interacts with the quiz
+quizButton.addEventListener('click', stopTimer);
+nextButton.addEventListener('click', stopTimer);
+
 

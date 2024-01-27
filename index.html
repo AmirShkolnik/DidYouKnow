@@ -10,7 +10,7 @@
 
     <meta name="Description" content="Welcome To The Jungle Quiz">
     <meta name="keywords" content="jungle quiz, quiz game, quiz online, online quiz game">
-    
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -27,44 +27,37 @@
 </head>
 
 <body>
-  
-<section id="quiz">
-    <!--Welcome Landing Page - Hide When Click On Buttons Rules and Play-->
-    <div id="quiz_area_box" class="quiz_area">
-        <h1 id="headline_home" class="heading">Welcome To The Jungle Quiz!</h1>
-        <div class="quiz-button">
-            <button class="ctrl-button" aria-label="rules" onclick="rules()">Rules</button>
-            <br>
-            <button class="ctrl-button" aria-label="start" onclick="start()">Start</button>
-        </div>
-    </div>
 
-    <div id="question_area_box" class="quiz_area">
-    <h1 id="headline_questions" class="heading">Jungle Quiz</h1>
-    <div class="quiz">
-    <h2 id="question">Questions</h2>
+    <section id="quiz">
+        <!--Welcome Landing Page - Hide When Click On Buttons Rules and Play-->
+        <div id="quiz_area_box" class="quiz_area">
+            <h1 id="headline_home" class="heading">Welcome To The Jungle Quiz!</h1>
+            <div class="quiz-button">
+                <button class="ctrl-button" aria-label="rules" onclick="rules()">Rules</button>
+                <br>
+                <button class="ctrl-button" aria-label="start" onclick="start()">Start</button>
+            </div>
+        </div>
+
+        <div id="question_area_box" class="quiz_area">
+            <h1 id="headline_questions" class="heading">Jungle Quiz</h1>
+            <div class="quiz">
+                <h2 id="question">Questions</h2>
+                <div id="timer_start">
+                <button id="timer" class="ctrl-button" aria-label="timer">10</button>
+            </div>
                 <div id="quizbutton" class="quiz-button">
-                <button class="answerbutton">Answer 1</button>
-                <button class="answerbutton">Answer 2</button>
-                <button class="answerbutton">Answer 3</button>
-                <button class="answerbutton">Answer 4</button>
+                    <button class="answerbutton">1</button>
+                    <button class="answerbutton">2</button>
+                    <button class="answerbutton">3</button>
+                    <button class="answerbutton">4</button>
                 </div>
             </div>
-            <div id="timer_start">
-                <button id="timer" class="timer-button" aria-label="timer">10</button>
-                <br>
-            <button id="next-btn" class="ctrl-button" aria-label="timer">Next</button>
-                 
+            <div>
+                <button id="next-btn" class="ctrl-button" aria-label="timer">Next</button>
             </div>
-</section>
-
-
-
-
-
-
-
-
+            
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
