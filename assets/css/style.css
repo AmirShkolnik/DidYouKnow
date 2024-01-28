@@ -25,7 +25,6 @@ p {
 
     font-family: "Lemon", sans-serif;
     text-align: left;
-    -webkit-text-stroke: 0.5px #be945b;
     font-size: 12px;
     color:#e9ed60;
     padding-left: 10px;
@@ -57,7 +56,6 @@ p {
 .quiz_area>h1 {
     
     font-family: "Lemon", sans-serif;
-    -webkit-text-stroke: 0.5px #be945b;
     border-bottom: 1px solid #be945b;
     font-size: 36px;
     color:#e9ed60;
@@ -73,7 +71,6 @@ p {
 h2 {
 
     font-family: "Lemon", sans-serif;
-    -webkit-text-stroke: 0.5px #be945b;
     font-size: 28px;
     color: #e9ed60;
     padding: 0 0 10px;
