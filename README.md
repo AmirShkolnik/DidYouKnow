@@ -60,7 +60,7 @@ Add your user stories here. You want to include first time visitors and returnin
 
 👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
-### Colour Scheme
+### Color Scheme
 
 I used the [Jungle Color Palette](https://www.color-hex.com/color-palette/84872) from the website color-hex made by [Chad_torino](https://www.color-hex.com/member/chad_torino)
 
@@ -79,6 +79,8 @@ I also like to include an image of the fonts chosen as a reference.
 Kaisei HarunoUmi 
 
 [Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
+
+I use the -webkit-text-stroke: 0.5px #be945b; for the headline.
 
 ### Imagery
 
