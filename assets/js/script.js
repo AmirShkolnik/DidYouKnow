@@ -146,13 +146,16 @@ function showQuestion() {
         button.classList.add("answerbutton"); // Displaying the answerbutton class from the css
         quizButton.appendChild(button); // Displaying const button in the div id="quizbutton"
 
+        /*  Checking if the current answer option is marked as correct. 
+        If it is marked as correct, it sets a custom attribute on 
+        the button called "correct" using the dataset property.*/
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer)
-       
+        button.addEventListener('click', selectAnswer) // When clicking the answer button it will trigger the selectAnswer Function
     });
 }
+
 
 // Remove previous questions and answers
 function resetState() {
@@ -164,9 +167,12 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+    
     const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
+    const isCorrect = selectedBtn.dataset.correct === "true"; 
+
     if (isCorrect) {
+        // 
         selectedBtn.innerHTML = "The Answer Is: " + selectedBtn.innerHTML;
         selectedBtn.classList.add("correct");
         score++;
