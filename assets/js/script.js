@@ -19,21 +19,21 @@ const questions = [{
         ]
     },
     {
-        question: "What is the tallest tree found in the jungle?",
+        question: "What is the most venomous snake found in the jungle?",
         answers: [{
-                text: "Oak",
+                text: "Cobra",
                 correct: false
             },
             {
-                text: "Baobab",
+                text: "Viper",
                 correct: false
             },
             {
-                text: "Redwood",
+                text: "Mamba",
                 correct: false
             },
             {
-                text: "Kapok",
+                text: "Taipan",
                 correct: true
             },
         ]
@@ -117,8 +117,6 @@ function start() {
     quizAreabox.style.display = "none";
     nextButton.innerHTML = "Next";
     showQuestion();
-    
-
 }
 
 function showQuestion() {
@@ -246,6 +244,7 @@ function goBack() {
          
      }
  }
+ 
 
  // Call the countdown function every second (1000 milliseconds)
  const intervalId = setInterval(countdown, 1000);

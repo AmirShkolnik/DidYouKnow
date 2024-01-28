@@ -35,7 +35,7 @@
             <div class="quiz-button">
                 <button class="ctrl-button" aria-label="rules" onclick="rules()">Rules</button>
                 <br>
-                <button class="ctrl-button" aria-label="start" onclick="start()">Start</button>
+                <button class="ctrl-button" aria-label="start" onclick="start(); countdown()">Start</button>
             </div>
         </div>
 
@@ -43,9 +43,7 @@
             <h1 id="headline_questions" class="heading">Jungle Quiz</h1>
             <div class="quiz">
                 <h2 id="question">Questions</h2>
-                <div id="timer_start">
                 <button id="timer" class="ctrl-button" aria-label="timer">10</button>
-            </div>
                 <div id="quizbutton" class="quiz-button">
                     <button class="answerbutton">1</button>
                     <button class="answerbutton">2</button>
@@ -53,7 +51,7 @@
                     <button class="answerbutton">4</button>
                 </div>
             </div>
-            <div>
+            <div id="timer_start">
                 <button id="next-btn" class="ctrl-button" aria-label="timer">Next</button>
             </div>
             
