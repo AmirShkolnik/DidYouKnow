@@ -116,30 +116,35 @@ let score = 0;
 // Start the quiz function by doing a few things:
 
 function start() {
-
-    currentQuestionIndex = 0; // It sets the current question number and score back to zero
+    // When starting the quiz it sets the current question number and score to zero
+    currentQuestionIndex = 0; 
     score = 0;
     questionAreabox.style.display = "block"; // Shows the area where questions will appear
     quizAreabox.style.display = "none"; // Hides the home page 
     nextButton.innerHTML = "Next"; // Changes the text on the button to "Next".
-    showQuestion(); // Shows the first question
+    showQuestion(); // Display the first question
 }
 
 // Displaying the current question to the user.
 
 function showQuestion() {
-    resetState(); //  Reseting the state of the quiz
+    resetState(); // Reseting the state of the quiz aka previous questions and answers
 
     let currentQuestion = questions[currentQuestionIndex]; // Changeable variable to display the current question
     let questionNo = currentQuestionIndex + 1; // Changeable variable to display the question number to the user
 
-    // For exp. - 1. What is the largest animal in the jungle?
+    /* Updating the innerHTML to show the current question and number to the user. 
+    For exp. - 1. What is the largest animal in the jungle?*/
+
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    /* After displaying the question we must display the answers on the right buttons */
+
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("answerbutton");
-        quizButton.appendChild(button);
+        button.innerHTML = answer.text; // Displaying the answer text from the questions above
+        button.classList.add("answerbutton"); // Displaying the answerbutton class from the css
+        quizButton.appendChild(button); // Displaying const button in the div id="quizbutton"
 
         if (answer.correct) {
             button.dataset.correct = answer.correct;
@@ -149,10 +154,11 @@ function showQuestion() {
     });
 }
 
+// Remove previous questions and answers
 function resetState() {
-// Remove previous answers
-    nextButton.style.display = "none";
-    while (quizButton.firstChild) {
+    nextButton.style.display = "none"; // As defult the next button should hide
+    // This loop removes all answers from the div id="quizbutton". clearing out any previously displayed answer.
+    while (quizButton.firstChild) { 
         quizButton.removeChild(quizButton.firstChild);
     }
 }
