@@ -1,3 +1,5 @@
+// Jungle quiz questions
+//Question numer 1
 const questions = [{
         question: "What is the largest animal in the jungle?",
         answers: [{
@@ -18,7 +20,7 @@ const questions = [{
             },
         ]
     },
-    {
+    { // Question numer 2
         question: "What is the most venomous snake found in the jungle?",
         answers: [{
                 text: "Cobra",
@@ -38,7 +40,7 @@ const questions = [{
             },
         ]
     },
-    {
+    { // Question numer 3
         question: "Which bird is known for imitating sounds and voices?",
         answers: [{
                 text: "Hawk",
@@ -58,7 +60,7 @@ const questions = [{
             },
         ]
     },
-    {
+    { // Question numer 4
         question: "What is the primary source of food for many jungle animals?",
         answers: [{
                 text: "Grass",
@@ -78,7 +80,7 @@ const questions = [{
             },
         ]
     },
-    {
+    { // Question numer 5
         question: "Which is the most dangerous animal in the jungle?",
         answers: [{
                 text: "Lion",
@@ -100,29 +102,36 @@ const questions = [{
     }
 ];
 
+// Selecting an HTML element by its ID and storing it as a constant variable.
 const questionElement = document.getElementById("question");
 const questionAreabox = document.getElementById("question_area_box");
 const quizAreabox = document.getElementById("quiz_area_box");
 const nextButton = document.getElementById("next-btn");
 const quizButton = document.getElementById("quizbutton");
 
+// Declaring two changeable variables, 'score' and 'question', using the 'let'.
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Start the quiz function by doing a few things:
+
 function start() {
 
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 0; // It sets the current question number and score back to zero
     score = 0;
-    questionAreabox.style.display = "block";
-    quizAreabox.style.display = "none";
-    nextButton.innerHTML = "Next";
-    showQuestion();
+    questionAreabox.style.display = "block"; // Shows the area where questions will appear
+    quizAreabox.style.display = "none"; // Hides the home page 
+    nextButton.innerHTML = "Next"; // Changes the text on the button to "Next".
+    showQuestion(); // Shows the first question
 }
 
+// Displaying the current question to the user.
+
 function showQuestion() {
-    resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
+    resetState(); //  Reseting the state of the quiz
+
+    let currentQuestion = questions[currentQuestionIndex]; // Changeable variable to display the current question
+    let questionNo = currentQuestionIndex + 1; // Changeable variable to display the question number to the user
 
     // For exp. - 1. What is the largest animal in the jungle?
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
