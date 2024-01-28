@@ -12,6 +12,7 @@
 body {
     background: url("../images/jungle.webp") no-repeat center center/cover;
     background-attachment: fixed; /* This ensures that the background image stays fixed while scrolling */
+    background-size: cover; /* This makes the background image cover the entire viewport */
     font-family: "Lemon", sans-serif;
 }
 
@@ -27,6 +28,7 @@ p {
     color: #e9ed60;
     padding-left: 10px;
     padding-right: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
 }
 
 #quiz {
@@ -39,7 +41,7 @@ p {
     border: 2px solid #e9ed60;
     width: 90%;
     max-width: 250px;
-    margin: 40px auto 0;
+    margin: 40px auto 40px;
     border-radius: 10px;
     line-height: normal;
     padding: 20px;
@@ -49,17 +51,18 @@ p {
 #question_area_box {
 
     display: none;
+
 }
 
 .quiz_area>h1 {
 
     font-family: "Lemon", sans-serif;
     border-bottom: 1px solid #be945b;
-    text-shadow: 0.5px 0 0 #be945b, 0 0.5px 0 #be945b, 0 -0.5px 0 #be945b, -0.5px 0 0 #be945b; /* Adding text shadow for outline effect */
     font-size: 36px;
     color: #e9ed60;
     padding: 0 0 10px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
 
 }
 
@@ -73,6 +76,7 @@ h2 {
     font-size: 28px;
     color: #e9ed60;
     padding: 0 0 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
 
 }
 
@@ -80,7 +84,7 @@ h2 {
     background-color: #52843c;
     font-size: 25px;
     color: #e9ed60;
-    text-shadow: 2px 2px rgb(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
     border: 2px solid #be945b;
     border-radius: 10px;
     font-family: 'Kaisei HarunoUmi', sans-serif;
