@@ -55,8 +55,7 @@ p {
 
     font-family: "Lemon", sans-serif;
     border-bottom: 1px solid #be945b;
-    -webkit-text-stroke: 0.5px #be945b;
-    /* For nicer outline*/
+    text-shadow: 0.5px 0 0 #be945b, 0 0.5px 0 #be945b, 0 -0.5px 0 #be945b, -0.5px 0 0 #be945b; /* Adding text shadow for outline effect */
     font-size: 36px;
     color: #e9ed60;
     padding: 0 0 10px;
