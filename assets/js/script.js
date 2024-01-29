@@ -17,7 +17,7 @@ let score = 0;
 
 
 function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
   
     // While there remain elements to shuffle.
     while (currentIndex > 0) {
@@ -133,10 +133,10 @@ function selectAnswer(e) {
 function showScore() {
     resetState();
     let message;
-    if (score === questions.length) {
+    if (score === 5) {
         message = "Great job! You scored 5 out of 5!";
-    } else if (score > 0 && score < questions.length) {
-        message = `Your result: ${score} out of ${questions.length}. Keep improving!`;
+    } else if (score > 0 && score < 5) {
+        message = `Your result: ${score} out of 5. Keep improving!`;
     } else {
         message = "Try again! You didn't score any points.";
     }
@@ -162,7 +162,7 @@ the quiz progresses to the next question if available or restarts the
 quiz if all questions have been answered.*/
 
 nextButton.addEventListener("click", ()=>{
-if(currentQuestionIndex < questions.length){handelNextButton();}else{
+if(currentQuestionIndex < 5){handelNextButton();}else{
     start();
 }
 
