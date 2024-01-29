@@ -134,7 +134,7 @@ function showScore() {
     resetState();
     let message;
     if (score === questions.length) {
-        message = "GREAT JOB! You scored 5 out of 5!";
+        message = "Great job! You scored 5 out of 5!";
     } else if (score > 0 && score < questions.length) {
         message = `Your result: ${score} out of ${questions.length}. Keep improving!`;
     } else {

@@ -45,6 +45,9 @@ p {
     border-radius: 10px;
     line-height: normal;
     padding: 20px;
+
+    
+
 }
 
 #question_area_box {
@@ -218,9 +221,24 @@ h2 {
     .quiz_area {
 
         max-width: 680px;
-        margin: 100px auto 0;
+        margin: 50px auto 0;
+        height: 450px;
 
     }
+
+    #rules_box {
+
+        height: 750px;
+    }
+
+    #question_area_box {
+
+        height: 750px;
+    }
+
+h1 {
+    margin-bottom: 1px;
+}
 
     h2 {
 
@@ -229,7 +247,7 @@ h2 {
 
     .quiz-button {
 
-        padding-top: 60px;
+        padding-top: 0px;
 
     }
 
