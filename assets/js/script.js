@@ -136,7 +136,7 @@ function showScore() {
     if (score === questions.length) {
         message = "Great job! You scored 5 out of 5!";
     } else if (score > 0 && score < questions.length) {
-        message = `Your result: ${score} out of 5. Keep improving!`;
+        message = `Your result: ${score} out of ${questions.length}. Keep improving!`;
     } else {
         message = "Try again! You didn't score any points.";
     }

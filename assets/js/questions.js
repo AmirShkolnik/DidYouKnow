@@ -261,21 +261,21 @@ let questions = [{
     ]
 },
 { // Question numer 14
-    question: "In addition to Asia, elephants can be found in the jungles of which another continent?",
+    question: "What's the difference between a rain forest and a jungle?",
     answers: [{
-            text: "South America",
-            correct: false
-        },
-        {
-            text: "Australia",
-            correct: false
-        },
-        {
-            text: "Africa",
+            text: "Jungles have fewer trees and more sunlight",
             correct: true
         },
         {
-            text: "Europe",
+            text: "Rainforests only occur in Africa",
+            correct: false
+        },
+        {
+            text: "Rainforests get more rain",
+            correct: false
+        },
+        {
+            text: "Jungles are bigger",
             correct: false
         },
     ]
@@ -361,41 +361,41 @@ let questions = [{
     ]
 },
 { // Question numer 19
-    question: 'For some reason I am often called "king of the jungle", even though I don\'t live there. What animal am I?',
+    question: "Who wrote 'The Jungle Book'?",
     answers: [{
-            text: "Lion",
-            correct: true
-        },
-        {
-            text: "Cheetah",
+            text: "JK Rowling",
             correct: false
         },
         {
-            text: "Leopard",
-            correct: true
+            text: "CS Lewis",
+            correct: false
         },
         {
-            text: "Serval",
+            text: "Jacqueline Wilson",
             correct: false
+        },
+        {
+            text: "Rudyard Kipling",
+            correct: true
         },
     ]
 },
 { // Question numer 20
-    question: "The most numerous insect in any jungle is almost totally blind and must follow scent trails to move around. A million of these would do more than ruin a picnic! What is this insect?",
+    question: "Which is the most dangerous animal in the jungle?",
     answers: [{
-            text: "Wasp",
+            text: "Lion",
             correct: false
         },
         {
-            text: "Scorpion",
+            text: "Anaconda",
             correct: false
         },
         {
-            text: "Ant",
+            text: "Crocodile",
             correct: true
         },
         {
-            text: "Larva",
+            text: "Rhino",
             correct: false
         },
     ]
