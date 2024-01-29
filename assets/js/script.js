@@ -1,107 +1,3 @@
-// Jungle quiz questions
-//Question numer 1
-const questions = [{
-        question: "What is the largest animal in the jungle?",
-        answers: [{
-                text: "Elephant",
-                correct: true
-            },
-            {
-                text: "Gorilla",
-                correct: false
-            },
-            {
-                text: "Hippopotamus",
-                correct: false
-            },
-            {
-                text: "Tiger",
-                correct: false
-            },
-        ]
-    },
-    { // Question numer 2
-        question: "What is the most venomous snake found in the jungle?",
-        answers: [{
-                text: "Cobra",
-                correct: false
-            },
-            {
-                text: "Viper",
-                correct: false
-            },
-            {
-                text: "Mamba",
-                correct: false
-            },
-            {
-                text: "Taipan",
-                correct: true
-            },
-        ]
-    },
-    { // Question numer 3
-        question: "Which bird is known for imitating sounds and voices?",
-        answers: [{
-                text: "Hawk",
-                correct: false
-            },
-            {
-                text: "Parrot",
-                correct: true
-            },
-            {
-                text: "Toucan",
-                correct: false
-            },
-            {
-                text: "Owl",
-                correct: false
-            },
-        ]
-    },
-    { // Question numer 4
-        question: "What is the primary source of food for many jungle animals?",
-        answers: [{
-                text: "Grass",
-                correct: false
-            },
-            {
-                text: "Fruits",
-                correct: true
-            },
-            {
-                text: "Insects",
-                correct: false
-            },
-            {
-                text: "Fish",
-                correct: false
-            },
-        ]
-    },
-    { // Question numer 5
-        question: "Which is the most dangerous animal in the jungle?",
-        answers: [{
-                text: "Lion",
-                correct: false
-            },
-            {
-                text: "Anaconda",
-                correct: false
-            },
-            {
-                text: "Crocodile",
-                correct: true
-            },
-            {
-                text: "Rhino",
-                correct: false
-            },
-        ]
-    }
-];
-
 // Selecting an HTML element by its ID and storing it as a constant variable.
 const questionElement = document.getElementById("question");
 const questionAreabox = document.getElementById("question_area_box");
@@ -125,7 +21,8 @@ function start() {
     showQuestion(); // Display the first question
 }
 
-// Displaying the current question to the user.
+/* Displaying the current question to the user. 
+   Questions are stored in questions.js*/
 
 function showQuestion() {
     resetState(); // Reseting the state of the quiz aka previous questions and answers
@@ -155,7 +52,6 @@ function showQuestion() {
         button.addEventListener('click', selectAnswer) // When clicking the answer button it will trigger the selectAnswer Function
     });
 }
-
 
 // Remove previous questions and answers
 function resetState() {
@@ -189,11 +85,16 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+
+  // Show correct answer briefly before moving to the next question
+  setTimeout(() => {
+    handelNextButton();
+}, 2000); // Delay for 2 seconds (2000 milliseconds)
 }
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
@@ -207,6 +108,10 @@ function handelNextButton(){
     }
     
 }
+
+/* This event listener ensures that when the "Next" button is clicked, 
+the quiz progresses to the next question if available or restarts the 
+quiz if all questions have been answered.*/
 
 nextButton.addEventListener("click", ()=>{
 if(currentQuestionIndex < questions.length){handelNextButton();}else{
@@ -245,38 +150,5 @@ function goBack() {
     'use strict';
     window.location.reload();
 }
-
- // Get the timer element
- let timerElement = document.getElementById('timer');
-  
- // Set the initial time
- let currentTime = parseInt(timerElement.innerHTML);
-
- // Define the countdown function
- function countdown() {
-     currentTime--; // Decrement the current time by 1
-     timerElement.innerHTML = "Time left: " + currentTime; // Update the timer display with the text "Time left:"
-
-     // If countdown reaches 0, stop the timer
-     if (currentTime <= 0) {
-         clearInterval(intervalId);
-         timerElement.innerHTML = "Time's up!";
-         startTimerButton.style.display = "block";
-         
-     }
- }
- 
-
- // Call the countdown function every second (1000 milliseconds)
- const intervalId = setInterval(countdown, 1000);
-
-// Function to stop the timer
-function stopTimer() {
-    clearInterval(intervalId); // Clear the interval
-}
-
- // Event listener to stop the timer when user interacts with the quiz
-quizButton.addEventListener('click', stopTimer);
-nextButton.addEventListener('click', stopTimer);
 
 
