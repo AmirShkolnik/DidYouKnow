@@ -41,11 +41,10 @@ p {
     border: 2px solid #e9ed60;
     width: 90%;
     max-width: 250px;
-    margin: 40px auto 40px;
+    margin: 20px auto 20px;
     border-radius: 10px;
     line-height: normal;
     padding: 20px;
-
 }
 
 #question_area_box {
@@ -63,7 +62,7 @@ p {
     padding: 0 0 10px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
-
+   
 }
 
 .quiz {
@@ -73,7 +72,7 @@ p {
 h2 {
 
     font-family: "Lemon", sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     color: #e9ed60;
     padding: 0 0 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
@@ -104,15 +103,35 @@ h2 {
     line-height: 2;
 }
 
+.score-button {
+
+    background-color: #52843c;
+    font-size: 16px;
+    color: #e9ed60;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and shadow color - stackoverflow.com*/
+    border: 2px solid #be945b;
+    border-radius: 10px;
+    font-family: 'Kaisei HarunoUmi', sans-serif;
+    font-weight: bold;
+    padding: .75rem 1.65rem;
+    width: 80%;
+    max-width: 250px;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(233, 237, 96, 0.4);
+    transition: all 0.1s;
+    margin: 20px 20px 0 20px;
+
+}
+
 .answerbutton {
     background: #52843c;
     color: #e9ed60;
     font-weight: 500;
-    font-size: 18px;
-    width: 80%;
+    font-size: 16px;
+    width: 100%;
     border: 1px solid #e9ed60;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: left;
     border-radius: 6px;
     cursor: pointer;
@@ -123,6 +142,7 @@ h2 {
 
     background: #e9ed60;
     color: #422f25;
+    font-size: 15px;
 }
 
 .answerbutton:disabled {
@@ -153,13 +173,6 @@ h2 {
     line-height: 2;
 }
 
-#quiz-end {
-
-    display: none;
-    margin: 0 auto 0;
-
-}
-
 #next-btn {
 
     display: none;
@@ -171,21 +184,7 @@ h2 {
     margin: 0 auto; /* This will center the home button horizontally */
 }
 
-.rules_area {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: white;
-    width: 90%;
-    max-width: 760px;
-    height: 90vh;
-    max-height: 600px;
-    text-align: center;
-    margin: auto;
-    border-radius: 10px;
-    align-items: center;
-    margin-bottom: 0px;
-    position: relative;
 
-}
 
 .rules-p {
 
@@ -224,6 +223,11 @@ h2 {
 
     }
 
+    h2 {
+
+        font-size: 28px;
+    }
+
     .quiz-button {
 
         padding-top: 60px;
@@ -233,6 +237,13 @@ h2 {
     .answerbutton {
 
         width: 60%;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .score-button {
+
+        font-size: 20px;
     }
 
     p {
@@ -246,7 +257,6 @@ h2 {
     #back_btn {
 
         text-align: center;
-
         z-index: 2;
     }
 
