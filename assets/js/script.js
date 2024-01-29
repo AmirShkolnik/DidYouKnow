@@ -122,7 +122,6 @@ function selectAnswer(e) {
         }
         button.disabled = true;
     });
-    nextButton.style.display = "block";
 
   // Show correct answer briefly before moving to the next question
   setTimeout(() => {
