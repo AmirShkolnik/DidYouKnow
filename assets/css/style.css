@@ -212,13 +212,12 @@ h2 {
     background: red;
 }
 
-
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+/* Media query: tablets and larger (700px and up) */
+@media screen and (min-width: 700px) {
 
     .quiz_area {
 
-        max-width: 760px;
+        max-width: 680px;
         margin: 100px auto 0;
 
     }
@@ -261,3 +260,21 @@ h2 {
     }
 
 }
+
+
+@media screen and (min-width: 370px) {
+
+    .quiz_area {
+
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .quiz_area {
+
+        max-width: 760px;
+    }
+}
+
