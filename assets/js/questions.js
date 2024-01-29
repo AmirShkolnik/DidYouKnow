@@ -99,5 +99,305 @@ let questions = [{
             correct: false
         },
     ]
+},
+{ // Question numer 6
+    question: "What percentage of the earth is covered with jungle and rainforest?",
+    answers: [{
+            text: "2%",
+            correct: false
+        },
+        {
+            text: "15%",
+            correct: false
+        },
+        {
+            text: "30%",
+            correct: false
+        },
+        {
+            text: "6%",
+            correct: true
+        },
+    ]
+},
+{ // Question numer 7
+    question: "The floor of the jungle is covered in___.",
+    answers: [{
+            text: "Leaves",
+            correct: false
+        },
+        {
+            text: "Tall grass",
+            correct: false
+        },
+        {
+            text: "Insects",
+            correct: true
+        },
+        {
+            text: "Stones",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 8
+    question: "The word “jungle” is derived from the Sanskrit word “jangala”. What does it mean?",
+    answers: [{
+            text: "Ocean",
+            correct: false
+        },
+        {
+            text: "Wet land",
+            correct: false
+        },
+        {
+            text: "Dry land",
+            correct: true
+        },
+        {
+            text: "Diverse land",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 9
+    question: "The Amazon rainforest spans how many countries and territories?",
+    answers: [{
+            text: "9",
+            correct: true
+        },
+        {
+            text: "5",
+            correct: false
+        },
+        {
+            text: "15",
+            correct: false
+        },
+        {
+            text: "35",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 10
+    question: "Most tigers live in the jungles in which part of the world?",
+    answers: [{
+            text: "The North Pole",
+            correct: false
+        },
+        {
+            text: "North America",
+            correct: false
+        },
+        {
+            text: "Africa",
+            correct: false
+        },
+        {
+            text: "Asia",
+            correct: true
+        },
+    ]
+},
+{ // Question numer 11
+    question: "One famous jungle fish is the___.",
+    answers: [{
+            text: "Salmon",
+            correct: false
+        },
+        {
+            text: "Shark",
+            correct: false
+        },
+        {
+            text: "Piranha",
+            correct: true
+        },
+        {
+            text: "Squid",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 12
+    question: "Jungles are mainly located in which part of the Earth?",
+    answers: [{
+            text: "Close to the oceans",
+            correct: false
+        },
+        {
+            text: "Close to the equator",
+            correct: true
+        },
+        {
+            text: "Close to the Artic circles",
+            correct: false
+        },
+        {
+            text: "Close To The Sahara Desert ",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 13
+    question: "What is the most lethal predator of the African jungle?",
+    answers: [{
+            text: "Leopard",
+            correct: true
+        },
+        {
+            text: "Gorilla",
+            correct: false
+        },
+        {
+            text: "Elephant",
+            correct: false
+        },
+        {
+            text: "African black sugar ant",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 14
+    question: "In addition to Asia, elephants can be found in the jungles of which another continent?",
+    answers: [{
+            text: "South America",
+            correct: false
+        },
+        {
+            text: "Australia",
+            correct: false
+        },
+        {
+            text: "Africa",
+            correct: true
+        },
+        {
+            text: "Europe",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 15
+    question: "The deadly fish of the African jungle is the _____.",
+    answers: [{
+            text: "Killer whale",
+            correct: false
+        },
+        {
+            text: "Tiger fish",
+            correct: true
+        },
+        {
+            text: "Crocodile",
+            correct: false
+        },
+        {
+            text: "Hammerhead shark",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 16
+    question: "The cockatoo is a kind of _____.",
+    answers: [{
+            text: "Insect",
+            correct: false
+        },
+        {
+            text: "Owl",
+            correct: false
+        },
+        {
+            text: "Eagle",
+            correct: false
+        },
+        {
+            text: "Parrot",
+            correct: true
+        },
+    ]
+},
+{ // Question numer 17
+    question: "The orangutan prefers _______.",
+    answers: [{
+            text: "New Guinea rainforest",
+            correct: false
+        },
+        {
+            text: "The rainforest",
+            correct: false
+        },
+        {
+            text: "The African jungle",
+            correct: false
+        },
+        {
+            text: "The Asian jungle",
+            correct: true
+        },
+    ]
+},
+{ // Question numer 18
+    question: "Which is the most dangerous animal in the jungle?",
+    answers: [{
+            text: "Lion",
+            correct: false
+        },
+        {
+            text: "Anaconda",
+            correct: false
+        },
+        {
+            text: "Crocodile",
+            correct: true
+        },
+        {
+            text: "Rhino",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 19
+    question: 'For some reason I am often called "king of the jungle", even though I don\'t live there. What animal am I?',
+    answers: [{
+            text: "Lion",
+            correct: true
+        },
+        {
+            text: "Cheetah",
+            correct: false
+        },
+        {
+            text: "Leopard",
+            correct: true
+        },
+        {
+            text: "Serval",
+            correct: false
+        },
+    ]
+},
+{ // Question numer 20
+    question: "The most numerous insect in any jungle is almost totally blind and must follow scent trails to move around. A million of these would do more than ruin a picnic! What is this insect?",
+    answers: [{
+            text: "Wasp",
+            correct: false
+        },
+        {
+            text: "Scorpion",
+            correct: false
+        },
+        {
+            text: "Ant",
+            correct: true
+        },
+        {
+            text: "Larva",
+            correct: false
+        },
+    ]
 }
 ];
