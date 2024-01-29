@@ -168,34 +168,28 @@ if(currentQuestionIndex < questions.length){handelNextButton();}else{
 
 } );
 
+
+
 // This function populates the 'quiz_area_box' element with quiz rules and instructions.
 function rules() {
     "use strict";
-    // Get the element with the id 'quiz_area_box'
-    let rulesAreabox = document.getElementById("quiz_area_box");
-    // Check if the 'quiz_area_box' element exists
+    // Get the elements with the respective IDs
+    let rulesAreabox = document.getElementById("rules_box");
+    
+    // Hide the quiz area box
+    quizAreabox.style.display = "none";
+    
+    // Check if the 'rules_box' element exists
     if (rulesAreabox) {
-        // If it exists, set its innerHTML to the specified content
-        rulesAreabox.innerHTML = `
-            <h1 id="headline_rules" class="heading">Follow The Rules</h1>
-            <div class="quiz-button">
-                <p>Get ready for an exciting adventure into the jungle with our fun and informative quiz!</p>
-                <br>
-                <p>Test your knowledge with 5 jungle-themed questions. </p>
-                <br>
-                <p>Don't worry if you're not sure – take your best guess and click on an answer. Correct answers will shine in yellow, while incorrect ones will stand out in red.</p>
-                <br>
-                <p>Your score will be revealed instantly, and in just 2 seconds, you'll move on to the next question. But if you're feeling impatient, feel free to click the 'Next' button anytime.</p>
-                <br>
-                <p>Are you up for the challenge? Let's dive into the jungle!"</p>
-                <br>
-                <button id="back_btn" class="button" aria-label="back" onclick="goBack()">Back</button>
-                <br>
-                <button class="ctrl-button" aria-label="start" onclick="start()">Start</button>
-            </div>
-        `;
+        rulesAreabox.style.display = "block"; // Display the rules
     }
+    
+    // Hide the rules when the gamer clicks start
+    document.getElementById("rules_str_btn").addEventListener("click", function() {
+        rulesAreabox.style.display = "none";
+    });
 }
+
 
 // This function reloads the current page when called, effectively acting as a "go back" action.
 function goBack() {
@@ -207,3 +201,6 @@ function goBack() {
 document.getElementById('rules-btn').addEventListener('click', rules);
 document.getElementById('start-btn').addEventListener('click', start);
 document.getElementById('home').addEventListener('click', goBack);
+document.getElementById('back_btn').addEventListener('click', goBack);
+document.getElementById('rules_str_btn').addEventListener('click', start);
+
