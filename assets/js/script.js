@@ -157,13 +157,15 @@ function rules() {
         rulesAreabox.innerHTML = `
             <h1 id="headline_rules" class="heading">Follow The Rules</h1>
             <div class="quiz-button">
-                <p>A fun and fact-filled questionnaire that will challenge your knowledge about the chemistry we are surrounded with.</p>
+                <p>Get ready for an exciting adventure into the jungle with our fun and informative quiz!</p>
                 <br>
-                <p>This quiz consists of Multiple Choice Questions. Use your best guess and click on the answer.</p>
+                <p>Test your knowledge with 5 jungle-themed questions. </p>
                 <br>
-                <p>Right answers will appear green and wrong ones in red. Scores will appear right away.</p>
+                <p>Don't worry if you're not sure – take your best guess and click on an answer. Correct answers will shine in yellow, while incorrect ones will stand out in red.</p>
                 <br>
-                <p>Ready to challenge yourself?</p>
+                <p>Your score will be revealed instantly, and in just 2 seconds, you'll move on to the next question. But if you're feeling impatient, feel free to click the 'Next' button anytime.</p>
+                <br>
+                <p>Are you up for the challenge? Let's dive into the jungle!"</p>
                 <br>
                 <button id="back_btn" class="button" aria-label="back" onclick="goBack()">Back</button>
                 <br>
