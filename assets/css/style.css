@@ -384,12 +384,12 @@ h2 {
 
     #headline_home, #headline_rules, #headline_questions  {
         font-size: 36px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     
     #question {
         font-size: 26px;
-        margin: 40px 0 20px;
+        margin: 40px 0 40px;
     }
 
     p {
@@ -406,7 +406,7 @@ h2 {
 {
 
     .quiz_area {
-        max-width: 950px;
+        max-width: 1000px;
         margin: 100px auto 0;
         height: 450px;
     }
@@ -416,25 +416,25 @@ h2 {
     }
     
     #rules_box {
-        max-width: 950px;
+        max-width: 1000px;
         height: 850px;
         margin: 10px auto 0;
     }
     
     #question_area_box {
-        max-width: 950px;
+        max-width: 1000px;
         height: 820px;
         margin: 10px auto 0;
     }
 
     #headline_home, #headline_rules, #headline_questions  {
         font-size: 42px;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
     
     #question {
         font-size: 32px;
-        margin: 40px 0 20px;
+        margin: 40px 0 40px;
     }
 
     p {
