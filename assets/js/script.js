@@ -4,6 +4,10 @@ const questionAreabox = document.getElementById("question_area_box");
 const quizAreabox = document.getElementById("quiz_area_box");
 const nextButton = document.getElementById("next-btn");
 const quizButton = document.getElementById("quizbutton");
+const homeButton = document.getElementById("home"); // Get the home button element
+
+// Hide the home button initially
+homeButton.style.display = "none";
 
 // Declaring two changeable variables, 'score' and 'question', using the 'let'.
 let currentQuestionIndex = 0;
@@ -19,6 +23,17 @@ function start() {
     quizAreabox.style.display = "none"; // Hides the home page 
     nextButton.innerHTML = "Next"; // Changes the text on the button to "Next".
     showQuestion(); // Display the first question
+    scoreDisplay.style.display = "block"; // Show the score display button
+    updateScoreDisplay(); // Reset the score display to show the initial score
+    homeButton.style.display = "none"; // Hide the home button
+
+}
+
+const scoreDisplay = document.getElementById("scoreDisplay");
+
+// Function to update the score display
+function updateScoreDisplay() {
+    scoreDisplay.textContent = "Score: " + score;
 }
 
 /* Displaying the current question to the user. 
@@ -72,6 +87,7 @@ function selectAnswer(e) {
         selectedBtn.innerHTML = "The Answer Is: " + selectedBtn.innerHTML;
         selectedBtn.classList.add("correct");
         score++;
+        updateScoreDisplay();
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -94,9 +110,18 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    let message;
+    if (score === questions.length) {
+        message = "GREAT JOB! You scored 5 out of 5!";
+    } else if (score > 0 && score < questions.length) {
+        message = `Your result: ${score} out of ${questions.length}. Keep improving!`;
+    } else {
+        message = "Try again! You didn't score any points.";
+    }
+    questionElement.innerHTML = message;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+    homeButton.style.display = "block";
 }
 
 function handelNextButton(){
@@ -105,6 +130,7 @@ function handelNextButton(){
         showQuestion();
     }else{
         showScore();
+        scoreDisplay.style.display = "none"; // Hide the score display button
     }
     
 }
