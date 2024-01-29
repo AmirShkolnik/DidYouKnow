@@ -153,7 +153,7 @@ h2 {
     line-height: 2;
 }
 
-#start_timer {
+#quiz-end {
 
     display: none;
     margin: 0 auto 0;
@@ -166,23 +166,9 @@ h2 {
     margin: 0 auto 0;
 }
 
-
-.timer-button {
-    background-color: #52843c;
-    font-size: 18px;
-    color: #e9ed60;
-    text-shadow: 2px 2px rgb(0, 0, 0, 0.6);
-    border: 2px solid #be945b;
-    border-radius: 10px;
-    font-family: 'Kaisei HarunoUmi', sans-serif;
-    font-weight: bold;
-    padding: .75rem 1.65rem;
-    width: 80%;
-    max-width: 250px;
-    cursor: pointer;
-    box-shadow: 2px 2px rgb(233, 237, 96, 0.4);
-    transition: all 0.1s;
-    margin: 20px 20px 20px 20px;
+#home {
+    display: block;
+    margin: 0 auto; /* This will center the home button horizontally */
 }
 
 .rules_area {

@@ -166,6 +166,8 @@ function rules() {
                 <p>Ready to challenge yourself?</p>
                 <br>
                 <button id="back_btn" class="button" aria-label="back" onclick="goBack()">Back</button>
+                <br>
+                <button class="ctrl-button" aria-label="start" onclick="start()">Start</button>
             </div>
         `;
     }
