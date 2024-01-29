@@ -341,21 +341,21 @@ let questions = [{
     ]
 },
 { // Question numer 18
-    question: "Which is the most dangerous animal in the jungle?",
+    question: "Where in the world do tigers live",
     answers: [{
-            text: "Lion",
+            text: "Africa",
             correct: false
         },
         {
-            text: "Anaconda",
+            text: "South America",
             correct: false
         },
         {
-            text: "Crocodile",
+            text: "Asia",
             correct: true
         },
         {
-            text: "Rhino",
+            text: "Southern Europe",
             correct: false
         },
     ]
@@ -381,21 +381,21 @@ let questions = [{
     ]
 },
 { // Question numer 20
-    question: "Which is the most dangerous animal in the jungle?",
+    question: "What percent of the worlds animals live in a jungle environment?",
     answers: [{
-            text: "Lion",
+            text: "Over 20%",
             correct: false
         },
         {
-            text: "Anaconda",
-            correct: false
-        },
-        {
-            text: "Crocodile",
+            text: "Over 50%",
             correct: true
         },
         {
-            text: "Rhino",
+            text: "Over 80%",
+            correct: false
+        },
+        {
+            text: "Over 5%",
             correct: false
         },
     ]
