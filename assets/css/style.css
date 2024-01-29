@@ -389,7 +389,7 @@ h2 {
     
     #question {
         font-size: 26px;
-        margin-bottom: 40px 0 20px;
+        margin: 40px 0 20px;
     }
 
     p {
@@ -434,7 +434,7 @@ h2 {
     
     #question {
         font-size: 32px;
-        margin-bottom: 40px 0 20px;
+        margin: 40px 0 20px;
     }
 
     p {
