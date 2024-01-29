@@ -1,6 +1,6 @@
 // Jungle quiz questions
 //Question numer 1
-const questions = [{
+let questions = [{
     question: "What is the largest animal in the jungle?",
     answers: [{
             text: "Elephant",

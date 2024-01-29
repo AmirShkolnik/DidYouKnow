@@ -6,6 +6,7 @@ const nextButton = document.getElementById("next-btn");
 const quizButton = document.getElementById("quizbutton");
 const homeButton = document.getElementById("home"); // Get the home button element
 
+
 // Hide the home button initially
 homeButton.style.display = "none";
 
@@ -13,10 +14,31 @@ homeButton.style.display = "none";
 let currentQuestionIndex = 0;
 let score = 0;
 
+
+
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex > 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
 // Start the quiz function by doing a few things:
 
 function start() {
     // When starting the quiz it sets the current question number and score to zero
+    questions = shuffle(questions);
     currentQuestionIndex = 0; 
     score = 0;
     questionAreabox.style.display = "block"; // Shows the area where questions will appear
@@ -64,7 +86,7 @@ function showQuestion() {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer) // When clicking the answer button it will trigger the selectAnswer Function
+        button.addEventListener('click', selectAnswer); // When clicking the answer button it will trigger the selectAnswer Function
     });
 }
 
@@ -126,7 +148,7 @@ function showScore() {
 
 function handelNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if(currentQuestionIndex < 5){
         showQuestion();
     }else{
         showScore();
@@ -182,3 +204,6 @@ function goBack() {
 }
 
 
+document.getElementById('rules-btn').addEventListener('click', rules);
+document.getElementById('start-btn').addEventListener('click', start);
+document.getElementById('home').addEventListener('click', goBack);
