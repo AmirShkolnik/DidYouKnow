@@ -221,12 +221,12 @@ h2 {
     }
     
     #rules_box {
-        height: 850px;
+        height: 800px;
         margin: 10px auto 0;
     }
     
     #question_area_box {
-        height: 720px;
+        height: 580px;
         margin: 10px auto 0;
     }
 
@@ -267,12 +267,12 @@ h2 {
 }
 
 #question_area_box {
-    height: 600px;
+    height: 580px;
     margin: 10px auto 0;
 }
 
 #headline_home, #headline_rules, #headline_questions  {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 
