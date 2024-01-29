@@ -289,7 +289,6 @@ h2 {
     }
 
     #quiz_area_box {
-
         max-width: 550px;
     }
     
@@ -300,7 +299,7 @@ h2 {
     }
     
     #question_area_box {
-        height: 680px;
+        height: 650px;
         max-width: 550px;
         margin: 10px auto 0;
     }
@@ -378,7 +377,7 @@ h2 {
     
     #question_area_box {
         max-width: 950px;
-        height: 750px;
+        height: 700px;
         margin: 10px auto 0;
     }
 
@@ -423,7 +422,7 @@ h2 {
     
     #question_area_box {
         max-width: 1000px;
-        height: 820px;
+        height: 700px;
         margin: 10px auto 0;
     }
 
