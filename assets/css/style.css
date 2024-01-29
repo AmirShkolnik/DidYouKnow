@@ -262,13 +262,18 @@ h2 {
 }
 
 #rules_box {
-    height: 750px;
+    height: 700px;
     margin: 10px auto 0;
 }
 
 #question_area_box {
-    height: 680px;
+    height: 600px;
     margin: 10px auto 0;
+}
+
+#headline_home, #headline_rules, #headline_questions  {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -299,7 +304,7 @@ h2 {
     }
     
     #question_area_box {
-        height: 650px;
+        height: 600px;
         max-width: 550px;
         margin: 10px auto 0;
     }
