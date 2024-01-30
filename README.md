@@ -225,11 +225,73 @@ To clone this repository follow the below steps:
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+### Validator Testing
+### HTML
+    - No errors were returned when passing through the official W3C Markup Validator
+        - [Jungle Quiz - W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Famirshkolnik.github.io%2FJungleQuiz%2F)
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+        ![Jungle Quiz - W3C Validator Results](doc/readme-images/HTML-checker.png)
+
+### CSS
+    - No errors were found when passing through the official W3C CSS Validator 
+        - [Jungle Quiz - W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famirshkolnik.github.io%2FJungleQuiz%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+
+        ![Jungle Quiz - W3C CSS Validator Results](doc/readme-images/CSS-Validering.png)
+
+
+### Javascript
+When testing the JavaScript code for the first time, [JSHint Validator](https://jshint.com/) returned a few crucial errors because semicolons were missing in a couple of lines and I used an onclick() event in the index.html page. 
+
+After fixing all the errors, JSHint returned 23 warnings regarding ES6. 
+
+For example, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use 'moz').
+
+At this juncture, I lack the knowledge on how to resolve this issue/warnings.
+
+- ### Test results for questions.js
+  ![JSHint Validator Results](doc/readme-images/JSHint-questions.png)
+
+- ### Test results for script.js
+  ![JSHint Validator Results](doc/readme-images/JSHint-script.png)
+
+  Accessibility
+  -------------
+
+The site achieved a Lighthouse accessibility score of 100% for mobile and pc which confirms that the colors and fonts chosen are easy to read and accessible.
+
+- ### Lighthouse Score For PC
+
+![Lighthouse Score For PC](doc/readme-images/lighthouse-pc.png)
+
+- ### Lighthouse Score For Mobile
+
+![Lighthouse Score For Mobile](doc/readme-images/lighthouse-mobile.png)
+
+- ### Form Testing
+- I checked the form to make sure you can't send it unless you fill in the necessary information like your name, email address, phone number and "What Do You Wish To Order?".
+
+- ### Links Testing
+- I checked all the navigation links to make sure they take the user to the right parts of the website.
+- I manually tested the links on the menu page to ensure users go to the order form correctly.
+- I tested the order form to make sure that after submitting, users are taken to the thank you page.
+- I also inspected the Social Media links at the bottom of each page to make sure they take the user to the right page and open in a new tab.
+
+### Browser Testing
+- I checked the website on Google Chrome, Firefox, Microsoft Edge, and Safari browsers, and everything was fine with no problems.
+    
+### Device Testing
+- I checked and tested the website on different devices like Desktop, Laptop, Samsung S21, and 14A, iPhone 12 PRO, and 14 PRO to make sure it works well on different screen sizes.
+
+The website worked as I wanted it to. I also used Chrome developer tools on all the devices to test the responsive design, and it stayed intact for all sizes.
+
+- I also tried the website on the following websites to test its responsiveness:
+
+    - [Responsinator](http://www.responsinator.com/?url=amirshkolnik.github.io%2FJungleQuiz)
+    - [Am I Responsive](doc/readme-images/amiresponsive.png)
+
+
+### User Experience - Friends and Family User Testing
+Friends and family were asked to check the site and documents for any problems or issues.
 
 Credits and Resources Used
 -----------------------------
