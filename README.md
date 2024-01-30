@@ -153,13 +153,35 @@ A great tip for this section is to include them as you use them, that way you wo
 
 [Favicon Creator](https://realfavicongenerator.net/)
 
-## Deployment & Local Development
+Deployment & Local Development
+------------------------------
 
 👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
 
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+The site was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
+
+
+### Cloning
+
+To clone this repository follow the below steps: 
+
+1. Locate the repository at this link [Jungle Quiz Repository](https://github.com/AmirShkolnik/JungleQuiz). 
+2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
+3. Open **Terminal**.
+4. In Terminal, change the current working directory to the desired location of the cloned directory.
+5. Type **'git clone'**, and then paste the URL copied from GitHub earlier. 
+6. Type **'Enter'** to create the local clone. 
 
 ### Local Development
 
@@ -181,7 +203,8 @@ Testing requirements aren't massive for your first project, however if you start
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
 
-## Credits and Resources Used
+Credits and Resources Used
+-----------------------------
 
 - [W3Schools](https://www.w3schools.com/)  
 - [Stack Overflow](https://stackoverflow.com/)
@@ -195,7 +218,7 @@ Use this part of the README to link to your TESTING.md file - you can view the e
 
 ### Color scheme
 
-[J U N G L E Color Palette](https://www.color-hex.com/color-palette/84872) - I used the jungle color palette from the website color-hex made by [Chad_torino](https://www.color-hex.com/member/chad_torino)
+- [J U N G L E Color Palette](https://www.color-hex.com/color-palette/84872) - I used the jungle color palette from the website color-hex made by [Chad_torino](https://www.color-hex.com/member/chad_torino)
 
 ### Code Used
 
@@ -213,22 +236,21 @@ Find out if you're the king of jungle trivia by Beano Quiz Team.
 - [wanderlustchloe.com](https://www.wanderlustchloe.com/animal-trivia-questions/) - 50 Animal Trivia Questions + Animal Picture Round.
 - [funtrivia.com](https://www.funtrivia.com/trivia-quiz/ForChildren/Animals-of-the-Jungle-392709.html) - Animals of the Jungle Trivia Quiz by AlexT781.
 
-
-
-###  Media
+### Media
 
 I used images, vectors, and illustrations from the following websites with thanks to the amazing photographers who created them.:
 
-Pexels
-------
-Background Image - [Alex Qian](https://www.pexels.com/sv-se/foto/landskap-natur-vatten-trad-2304796/)
+#### Pexels
 
-Pixabay
-------
-Favicon - Question Mark - [PClker-Free-Vector-Images](https://pixabay.com/sv/vectors/fr%C3%A5ga-m%C3%A4rke-knapp-tecken-symbol-24851/)
+- Background Image - [Alex Qian](https://www.pexels.com/sv-se/foto/landskap-natur-vatten-trad-2304796/)
+
+#### Pixabay
+
+- Favicon - Question Mark - [PClker-Free-Vector-Images](https://pixabay.com/sv/vectors/fr%C3%A5ga-m%C3%A4rke-knapp-tecken-symbol-24851/)
   
-###  Acknowledgments
+Acknowledgments
+---------------
 
-My mentor, Antonio Rodriguez, for his support and guidance.
+- My mentor, Antonio Rodriguez, for his support and guidance.
 
-Thank you to the Code Institute Slack community for their quick responses and helpful feedback!
+- Thank you to the Code Institute Slack community for their quick responses and helpful feedback!

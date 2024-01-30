@@ -339,13 +339,13 @@ h2 {
     
     #rules_box {
         max-width: 700px;
-        height: 650px;
+        height: 7000px;
         margin: 10px auto 0;
     }
     
     #question_area_box {
         max-width: 550px;
-        height: 680px;
+        height: 700px;
         margin: 40px auto 0;
     }
 
@@ -382,7 +382,7 @@ h2 {
     
     #question_area_box {
         max-width: 950px;
-        height: 700px;
+        height: 720px;
         margin: 10px auto 0;
     }
 
@@ -427,7 +427,7 @@ h2 {
     
     #question_area_box {
         max-width: 1000px;
-        height: 700px;
+        height: 720px;
         margin: 10px auto 0;
     }
 
