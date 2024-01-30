@@ -181,25 +181,54 @@ Testing requirements aren't massive for your first project, however if you start
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
 
-## Credits
+## Credits and Resources Used
+
+- [W3Schools](https://www.w3schools.com/)  
+- [Stack Overflow](https://stackoverflow.com/)
+- [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - The following article was very helpful in understanding shuffling and the Fisher–Yates shuffle algorithm.
+
+### Youtube Channels
+
+- [Programming with Mosh](https://www.youtube.com/watch?v=W6NZfCO5SIk) - JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour.
+- [SuperSimpleDev](https://www.youtube.com/watch?v=SBmSRK3feww) - JavaScript Full Course - Beginner to Pro.
+- [Telusko](https://www.youtube.com/watch?v=uDwSnnhl1Ng&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV) - JavaScript Tutorial.
+
+### Color scheme
 
 [J U N G L E Color Palette](https://www.color-hex.com/color-palette/84872) - I used the jungle color palette from the website color-hex made by [Chad_torino](https://www.color-hex.com/member/chad_torino)
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+- The basic code for building the quiz was inspired by the following tutorial which I then adapted for my own Jungle Quiz. - [How To Make Quiz App Using JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8).
+- I used the Fisher Yates Shuffle in order to shuffle the questions and answer from a 20 questions database which I learned about in this tutorial - [Shuffle an array](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array).
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+I gathered questions from various websites and utilized ChatGPT to both compose and revise some of them.
+
+- [howstuffworks.com](https://play.howstuffworks.com/quiz/how-much-do-you-know-animals-that-live-the-jungle) - How Much Do You Know About Animals That Live in the Jungle by Annette.
+- [beano.com](https://www.beano.com/posts/the-ultimate-jungle-quiz) - The Ultimate Jungle Quiz
+Find out if you're the king of jungle trivia by Beano Quiz Team.
+- [welovequizzes.com](https://www.beano.com/posts/the-ultimate-jungle-quiz) - 26 Jungle Quiz Questions And Answers: Dense by We Love Quizzes.
+- [wanderlustchloe.com](https://www.wanderlustchloe.com/animal-trivia-questions/) - 50 Animal Trivia Questions + Animal Picture Round.
+- [funtrivia.com](https://www.funtrivia.com/trivia-quiz/ForChildren/Animals-of-the-Jungle-392709.html) - Animals of the Jungle Trivia Quiz by AlexT781.
+
+
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+I used images, vectors, and illustrations from the following websites with thanks to the amazing photographers who created them.:
+
+Pexels
+------
+Background Image - [Alex Qian](https://www.pexels.com/sv-se/foto/landskap-natur-vatten-trad-2304796/)
+
 Pixabay
 ------
-[PClker-Free-Vector-Images](https://pixabay.com/sv/vectors/fr%C3%A5ga-m%C3%A4rke-knapp-tecken-symbol-24851/)- Favicon - Question Mark
+Favicon - Question Mark - [PClker-Free-Vector-Images](https://pixabay.com/sv/vectors/fr%C3%A5ga-m%C3%A4rke-knapp-tecken-symbol-24851/)
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+My mentor, Antonio Rodriguez, for his support and guidance.
+
+Thank you to the Code Institute Slack community for their quick responses and helpful feedback!

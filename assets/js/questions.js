@@ -281,7 +281,7 @@ let questions = [{
     ]
 },
 { // Question numer 15
-    question: "The deadly fish of the African jungle is the _____.",
+    question: "The deadly fish of the African jungle is the___.",
     answers: [{
             text: "Killer whale",
             correct: false
@@ -301,7 +301,7 @@ let questions = [{
     ]
 },
 { // Question numer 16
-    question: "The cockatoo is a kind of _____.",
+    question: "The cockatoo is a kind of___.",
     answers: [{
             text: "Insect",
             correct: false
@@ -321,7 +321,7 @@ let questions = [{
     ]
 },
 { // Question numer 17
-    question: "The orangutan prefers _______.",
+    question: "The orangutan prefers___.",
     answers: [{
             text: "New Guinea rainforest",
             correct: false
