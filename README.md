@@ -153,10 +153,43 @@ A great tip for this section is to include them as you use them, that way you wo
 
 [Favicon Creator](https://realfavicongenerator.net/)
 
+### Frameworks, Libraries & Programs Used
+
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Git](https://git-scm.com/) - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [GitPod](https://gitpod.io/) - IDE used to create the site.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [jQuery](https://jquery.com/) - A JavaScript library.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [TinyPNG](https://tinypng.com/) To compress images
+
+* [Birme](https://www.birme.net/) To resize images and convert to webp format.
+
+* [Favicon.io](https://favicon.io/) To create favicon.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+* [Shields.io](https://shields.io/) To add badges to the README
+
+* [Open Trivia DataBase](https://opentdb.com/) - API used for the trivia questions.
+
+* [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - a google chrome extension to enable you to view JSON as raw data or parsed.
+
+* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
+
+* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+
+
 Deployment & Local Development
 ------------------------------
-
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
 
 ### Deployment
 
@@ -171,8 +204,15 @@ The site was deployed using GitHub pages. The steps to deploy using GitHub pages
 
 The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
 
+### How to Fork
 
-### Cloning
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
+3. Click the Fork button in the top right corner.
+
+### How to Clone
 
 To clone this repository follow the below steps: 
 
@@ -182,18 +222,6 @@ To clone this repository follow the below steps:
 4. In Terminal, change the current working directory to the desired location of the cloned directory.
 5. Type **'git clone'**, and then paste the URL copied from GitHub earlier. 
 6. Type **'Enter'** to create the local clone. 
-
-### Local Development
-
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
-#### How to Fork
-
-Place instructions on how to fork your project here.
-
-#### How to Clone
-
-Place instructions on how to clone your project here.
 
 ## Testing
 
@@ -209,6 +237,8 @@ Credits and Resources Used
 - [W3Schools](https://www.w3schools.com/)  
 - [Stack Overflow](https://stackoverflow.com/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - The following article was very helpful in understanding shuffling and the Fisher–Yates shuffle algorithm.
+- [JSchallenger](https://www.jschallenger.com/) 
+
 
 ### Youtube Channels
 
@@ -222,7 +252,7 @@ Credits and Resources Used
 
 ### Code Used
 
-- The basic code for building the quiz was inspired by the following tutorial which I then adapted for my own Jungle Quiz. - [How To Make Quiz App Using JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8).
+- The basic code for building the quiz was inspired by the following tutorial which I then adapted for my own Jungle Quiz. - [How To Make Quiz App Using JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8) by GreatStack.
 - I used the Fisher Yates Shuffle in order to shuffle the questions and answer from a 20 questions database which I learned about in this tutorial - [Shuffle an array](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array).
 
 ### Content
