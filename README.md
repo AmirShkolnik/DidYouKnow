@@ -1,15 +1,21 @@
-# PROJECT NAME TO GO HERE
+Welcome To The Jungle Quiz!
+---------------------------
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+Embark on an exhilarating journey into the heart of the jungle with our Jungle Quiz!
 
-Add a Blurb about the site here, what does it do, why did you build it?
+Test your knowledge and explore the mysteries of the jungle with 5 captivating questions randomly selected from our extensive database of 20 intriguing queries.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+With each question, challenge yourself to uncover the secrets of the jungle while immersing yourself in the wonders of nature.
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
+Don't worry if you're not sure - take your best guess and click on an answer. Correct answers will shine in yellow, while incorrect ones will stand out in red.
 
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+Your score will be revealed instantly, and in just 2 seconds, you'll move on to the next question. At the conclusion of your jungle adventure, receive feedback tailored to your performance. 
 
+Are you ready to answer the call of the wild and conquer the Jungle Quiz?
+
+The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
+
+![Jungle Quiz](doc/readme-images/amiresponsive.png)
 ---
 
 ## CONTENTS
@@ -51,6 +57,8 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 ## User Experience (UX)
 
 👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+
+
 
 ### User Stories
 
@@ -287,7 +295,7 @@ The website worked as I wanted it to. I also used Chrome developer tools on all 
 - I also tried the website on the following websites to test its responsiveness:
 
     - [Responsinator](http://www.responsinator.com/?url=amirshkolnik.github.io%2FJungleQuiz)
-    - [Am I Responsive](doc/readme-images/amiresponsive.png)
+    - [Am I Responsive](https://ui.dev/amiresponsive?url=https://amirshkolnik.github.io/JungleQuiz/)
 
 
 ### User Experience - Friends and Family User Testing
