@@ -17,7 +17,7 @@ Are you ready to answer the call of the wild and conquer the Jungle Quiz?
 
 The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
 
-![Jungle Quiz](doc/readme-images/amiresponsive.png)
+![Jungle Quiz](doc/readme-images/amiresponsive-mix.png)
 
 ## CONTENTS
 
