@@ -17,7 +17,7 @@ Are you ready to answer the call of the wild and conquer the Jungle Quiz?
 
 The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
 
-![Jungle Quiz](doc/readme-images/amiresponsive-mix.png)
+![Jungle Quiz](doc/readme-images/amiresponsive.png)
 
 ## CONTENTS
 
@@ -75,39 +75,57 @@ User Experience (UX)
 - I want to explore various aspects of jungle life, such as plants, trees, animals, rivers, climate, and more.
 - I want to achieve high scores to track my progress.
 
+---
+
 Design
 ------
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Color Scheme
 
-I used the [Jungle Color Palette](https://www.color-hex.com/color-palette/84872) from the website color-hex made by [Chad_torino](https://www.color-hex.com/member/chad_torino)
+I used the [Jungle Color Palette](https://www.color-hex.com/color-palette/84872) from the website color-hex made by [Chad_torino](https://www.color-hex.com/member/chad_torino) and the color red (#ff0000).
+
+- I've used #e9ed60 & #422f25 as the primary and secondary colors for the site's text.
+
+- I've used #422f25 as the overlay on the site's background image.
+
+- I've used #e9ed60 & #be945b for borders on buttons, questions, answers, and the quiz area.
+
+- I've used #52843c to show buttons.
+
+- I've used #e9ed60 for button hover effects.
+
+- I've used #ff0000 to indicate wrong answers.
+
+- I've used #e9ed60 to highlight the correct answer.
+
 
 ![J U N G L E Color Palette](/doc/readme-images/color-palette.png)
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+[Google Fonts](https://fonts.google.com/) was used to import the chosen fonts for use in the site.
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+I chose the Lemon Google Fonts for the site's font because it's a personal preference of mine. I find that the font has a visually appealing appearance that I personally enjoy. Additionally, it's easy to read, which is important for a quiz-style website where users need to quickly comprehend the text.
 
-I also like to include an image of the fonts chosen as a reference.
+Furthermore, I believe that the Lemon font fits perfectly with the style and aesthetic of the quiz. Its clean and modern look adds a touch of sophistication while still maintaining a playful vibe, which aligns well with the overall theme of the quiz. Overall, I selected the Lemon Google Fonts because I found it aesthetically pleasing, easy to read, and fitting for the style and tone of the quiz.
 
-Kaisei HarunoUmi 
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
-
-I use the -webkit-text-stroke: 0.5px #be945b; for the headline.
+![Lemon](doc/readme-images/Lemon.png)
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+I chose a jungle background for the website because of its thematic relevance to the website's title, 'Jungle Quiz.'
+
+By incorporating an image of a jungle as the page background, I aimed to immerse the user in the atmosphere of a jungle environment, creating an engaging and immersive experience. 
+
+This choice is intended to evoke the sense of adventure and exploration that one might associate with a jungle setting, enhancing the overall theme and appeal of the Jungle Quiz website. 
+
+Ultimately, the jungle background serves to enhance the user's participation in the quiz, making them feel as though they are embarking on a thrilling journey through the heart of the jungle.
+
+![Jungle](doc/readme-images/Jungle.png)
 
 ### Wireframes
 
-The wireframe shows designs for phone, iPad/tablet and desktop displays.
+The wireframe shows designs for iPad/tablet and desktop displays.
 
 #### 1. Welcome To The Jungle Quiz:
 
@@ -126,11 +144,23 @@ The wireframe shows designs for phone, iPad/tablet and desktop displays.
 ![Score](/doc/readme-images/Score.png)
 
 
-## Features
+Features
+--------
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+### Home Page
 
-This section can be used to explain what pages your site is made up of.
+I chose the quiz features based on their simplicity and user-friendliness. 
+
+The landing page of the website has a straightforward layout, featuring a prominent H1 heading that clearly states the name of the quiz. 
+
+Additionally, there are two large and colorful interactive buttons, making it easy for users to navigate and select their desired option. 
+
+- Rules
+- Start
+
+By providing users with only two options to choose from, we aim to streamline the decision-making process, ensuring a hassle-free and enjoyable experience for all users.
+
+![Score](doc/readme-images/homepage.png)
 
 ### General features on each page
 
