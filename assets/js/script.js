@@ -158,9 +158,9 @@ function showScore() {
     if (score === 5) {
         message = "Great job! You scored 5 out of 5!";
     } else if (score > 0 && score < 5) {
-        message = `Your result: ${score} out of 5. Keep improving!`;
+        message = `Your result: ${score} out of 5 Keep improving!`;
     } else {
-        message = "Try again! You didn't score any points.";
+        message = "Try again! You didn't score any points";
     }
     questionElement.innerHTML = message;
     nextButton.innerHTML = "Play Again";

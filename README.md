@@ -1,3 +1,5 @@
+![Jungle Quiz Logo](doc/readme-images/Jungel-Quiz-Logo.png)
+
 Welcome To The Jungle Quiz!
 ---------------------------
 
@@ -15,8 +17,7 @@ Are you ready to answer the call of the wild and conquer the Jungle Quiz?
 
 The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
 
-![Jungle Quiz](doc/readme-images/amiresponsive-mix.png)
----
+![Jungle Quiz](doc/readme-images/amiresponsive.png)
 
 ## CONTENTS
 
@@ -54,18 +55,28 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
 
 ---
 
-## User Experience (UX)
-
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-
-
+User Experience (UX)
+-----------------------
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+### First Time Visitor Goals
 
-## Design
+- I want to participate in an online quiz about the jungle and enhance my general knowledge.
+- I want the ability to play the quiz anytime, anywhere.
+- I want the website to adjust to my device's screen size.
+- I want the website to be easy to navigate.
+- I want to view my score to gauge my knowledge level.
 
+### Returning Visitor Goals
+
+- I want to expand my understanding of the jungle.
+- I want to encounter new questions to test my knowledge.
+- I want to explore various aspects of jungle life, such as plants, trees, animals, rivers, climate, and more.
+- I want to achieve high scores to track my progress.
+
+Design
+------
 👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Color Scheme
