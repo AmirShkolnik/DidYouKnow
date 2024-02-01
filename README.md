@@ -222,29 +222,26 @@ After answering 5 questions, the user will be directed to the results page. Here
 - Email JS to signup to newsletter.
 - Ability to play sounds.
 
-## Technologies Used
-
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
+Technologies Used
+-----------------
 
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+This website was created using the following languages:
+
+- JavaScript
+- HTML5
+- CSS
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://amirshkolnik.github.io/JungleQuiz/) To show the website image on a range of devices.
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+- [Responsinator](http://www.responsinator.com/?url=amirshkolnik.github.io%2FJungleQuiz) To show the website image on a range of devices.
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
-
-[Favicon Creator](https://realfavicongenerator.net/)
-
-### Frameworks, Libraries & Programs Used
+- [Affinity Photo](https://affinity.serif.com/en-gb/photo/) Photo editor software.
 
 - [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
-
-- [Git](https://git-scm.com/) - For version control.
 
 - [Github](https://github.com/) - To save and store the files for the website.
 
@@ -252,25 +249,13 @@ A great tip for this section is to include them as you use them, that way you wo
 
 - [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-- [jQuery](https://jquery.com/) - A JavaScript library.
-
 - [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 - [TinyPNG](https://tinypng.com/) To compress images
 
 - [Birme](https://www.birme.net/) To resize images and convert to webp format.
 
-- [Favicon.io](https://favicon.io/) To create favicon.
-
-- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
-
-- [Shields.io](https://shields.io/) To add badges to the README
-
-- [Open Trivia DataBase](https://opentdb.com/) - API used for the trivia questions.
-
-- [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - a google chrome extension to enable you to view JSON as raw data or parsed.
-
-- [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
+- [Favicon Creator](https://realfavicongenerator.net/) To create favicon.
 
 - [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
@@ -296,7 +281,7 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
+2. Go to the repository for this project, [Jungle Quiz](https://github.com/AmirShkolnik/JungleQuiz)
 3. Click the Fork button in the top right corner.
 
 ### How to Clone
@@ -314,16 +299,16 @@ To clone this repository follow the below steps:
 
 ### Validator Testing
 ### HTML
-    - No errors were returned when passing through the official W3C Markup Validator
+  - No errors were returned when passing through the official W3C Markup Validator
         - [Jungle Quiz - W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Famirshkolnik.github.io%2FJungleQuiz%2F)
 
-        ![Jungle Quiz - W3C Validator Results](doc/readme-images/HTML-checker.png)
+      ![Jungle Quiz - W3C Validator Results](doc/readme-images/HTML-checker.png)
 
 ### CSS
-    - No errors were found when passing through the official W3C CSS Validator 
+  - No errors were found when passing through the official W3C CSS Validator 
         - [Jungle Quiz - W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famirshkolnik.github.io%2FJungleQuiz%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
-        ![Jungle Quiz - W3C CSS Validator Results](doc/readme-images/CSS-Validering.png)
+      ![Jungle Quiz - W3C CSS Validator Results](doc/readme-images/CSS-Validering.png)
 
 
 ### Javascript
