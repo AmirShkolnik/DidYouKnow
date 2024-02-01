@@ -1,7 +1,7 @@
 // Jungle quiz questions
 //Question numer 1
 let questions = [{
-    question: "What is the largest animal in the jungle?",
+    question: "Which animal holds the title for being the largest in the jungle?",
     answers: [{
             text: "Elephant",
             correct: true
@@ -21,7 +21,7 @@ let questions = [{
     ]
 },
 { // Question numer 2
-    question: "What is the most venomous snake found in the jungle?",
+    question: "What is the deadliest snake found in the jungle?",
     answers: [{
             text: "Cobra",
             correct: false
@@ -41,7 +41,7 @@ let questions = [{
     ]
 },
 { // Question numer 3
-    question: "Which bird is known for imitating sounds and voices?",
+    question: "Which bird is renowned for mimicking sounds and voices?",
     answers: [{
             text: "Hawk",
             correct: false
@@ -61,7 +61,7 @@ let questions = [{
     ]
 },
 { // Question numer 4
-    question: "What is the primary source of food for many jungle animals?",
+    question: "What is the primary food source for many animals in the jungle?",
     answers: [{
             text: "Grass",
             correct: false
@@ -81,7 +81,7 @@ let questions = [{
     ]
 },
 { // Question numer 5
-    question: "Which is the most dangerous animal in the jungle?",
+    question: "What is the most hazardous animal in the jungle?",
     answers: [{
             text: "Lion",
             correct: false
@@ -101,7 +101,7 @@ let questions = [{
     ]
 },
 { // Question numer 6
-    question: "What percentage of the earth is covered with jungle and rainforest?",
+    question: "What percentage of the Earth's surface is covered with jungle and rainforest?",
     answers: [{
             text: "2%",
             correct: false
@@ -141,7 +141,7 @@ let questions = [{
     ]
 },
 { // Question numer 8
-    question: "The word “jungle” is derived from the Sanskrit word “jangala”. What does it mean?",
+    question: 'The term "jungle" originates from the Sanskrit word "jangala". What does it mean?',
     answers: [{
             text: "Ocean",
             correct: false

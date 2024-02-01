@@ -56,11 +56,12 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
   * [Accessibility](#accessibility)
   * [Buttons Testing](#buttons-testing)
   * [Quiz Testing](#quiz-testing)
+  * [Responsiveness](#responsiveness)
   * [Browser Testing](browser-testing)
   * [Device Testing](#device-testing)
-  * [Responsiveness](#responsiveness)
-  
 
+* [Known Bugs](#known-bugs)
+  
 * [Credits](#credits)
   * [Code Used](#code-used)
   * [Content](#content)
@@ -202,7 +203,7 @@ If the user clicks the 'Start' button, the first question will appear. The user 
 
 ![Score](doc/readme-images/shuffle2.jpg)
 
-Upon selecting an answer, correct responses will shine in yellow, while incorrect ones will be highlighted in red. 
+Upon selecting an answer, correct responses will shine in yellow following the text "The Answer Is:", while incorrect ones will be highlighted in red. 
 
 ![Questions and Answers](doc/readme-images/questions-and-answers.jpg)
 
@@ -272,21 +273,21 @@ Deployment & Local Development
 
 The site was deployed using GitHub pages. The steps to deploy using GitHub pages are:
 
-1. Go to the repository on GitHub.com
+1. Go to the repository on GitHub.com.
 2. Select 'Settings' near the top of the page.
 3. Select 'Pages' from the menu bar on the left of the page.
 4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
 5. Once selected, click the 'Save'.
 6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
-The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/)
+The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/JungleQuiz/).
 
 ### How to Fork
 
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [Jungle Quiz](https://github.com/AmirShkolnik/JungleQuiz)
+2. Go to the repository for this project - [Jungle Quiz](https://github.com/AmirShkolnik/JungleQuiz).
 3. Click the Fork button in the top right corner.
 
 ### How to Clone
@@ -377,33 +378,32 @@ The quiz was thoroughly tested by friends and family to ensure everything functi
 
 I checked the website on Google Chrome, Firefox, Microsoft Edge, opera and Safari browsers and everything was fine with no problems.
 
-    
-### Device Testing
-I checked and tested the website on various devices such as desktops, laptops, and mobiles to ensure the quiz functions well on different screen sizes.
-
-#### Laptop and Desktop:
-The website is responsive as planned, and the quiz is working as expected.
-
-#### Android Mobiles:
-The website was tested on Samsung S9, S21, and 14A. It is responsive as planned, and the quiz is working as it should.
-
-#### iPhone Devices:
-The website was tested on iPhone 10 and 14 Pro. While it is responsive as planned, the quiz is not functioning as expected. 
-
-**For an unknown reason, a random answer is being highlighted in yellow before the user even selects an answer. This bug must be resolved so iPhone users can enjoy the quiz too**.
-
-![iPhone Devices](doc/readme-images/iphone.jpg)
-
 ### Responsiveness
 
 - I also tried the website on the following websites to test its responsiveness:
 
     - [Responsinator](http://www.responsinator.com/?url=amirshkolnik.github.io%2FJungleQuiz)
     - [Am I Responsive](https://ui.dev/amiresponsive?url=https://amirshkolnik.github.io/JungleQuiz/)
+    
+### Device Testing
+I checked and tested the website on various devices such as desktops, laptops, and mobiles to ensure the quiz functions well on different screen sizes.
+
+#### Laptop and Desktop:
+- The website is responsive as planned, and the quiz is working as expected.
+
+#### Android Mobiles:
+- The website was tested on Samsung S9, S21, and 14A. It is responsive as planned, and the quiz is working as it should.
+
+#### iPhone Devices:
+- The website was tested on iPhone 10 and 14 Pro. While it is responsive as planned, the quiz is not functioning as expected. 
 
 
-### User Experience - Friends and Family User Testing
-Friends and family were asked to check the site and documents for any problems or issues.
+Known Bugs
+----------
+
+**For an unknown reason, a random answer is being highlighted in yellow before the user even selects an answer. This bug must be resolved so iPhone users can enjoy the quiz too**.
+
+![iPhone Devices](doc/readme-images/iphone.jpg)
 
 Credits and Resources Used
 -----------------------------
