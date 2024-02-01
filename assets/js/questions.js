@@ -161,7 +161,7 @@ let questions = [{
     ]
 },
 { // Question numer 9
-    question: "The Amazon rainforest spans how many countries and territories?",
+    question: "How many countries and areas does the Amazon rainforest cover?",
     answers: [{
             text: "9",
             correct: true
@@ -181,7 +181,7 @@ let questions = [{
     ]
 },
 { // Question numer 10
-    question: "Most tigers live in the jungles in which part of the world?",
+    question: "In which part of the world do most tigers live in the jungle?",
     answers: [{
             text: "The North Pole",
             correct: false
@@ -201,7 +201,7 @@ let questions = [{
     ]
 },
 { // Question numer 11
-    question: "One famous jungle fish is the___.",
+    question: "In the jungle, there is a well-known fish called the ___.",
     answers: [{
             text: "Salmon",
             correct: false
@@ -221,7 +221,7 @@ let questions = [{
     ]
 },
 { // Question numer 12
-    question: "Jungles are mainly located in which part of the Earth?",
+    question: "In which part of the Earth are jungles mostly found?",
     answers: [{
             text: "Close to the oceans",
             correct: false
@@ -241,7 +241,7 @@ let questions = [{
     ]
 },
 { // Question numer 13
-    question: "What is the most lethal predator of the African jungle?",
+    question: "Which animal is the most dangerous in the African jungle?",
     answers: [{
             text: "Leopard",
             correct: true
@@ -261,7 +261,7 @@ let questions = [{
     ]
 },
 { // Question numer 14
-    question: "What's the difference between a rain forest and a jungle?",
+    question: "WWhat makes a rainforest different from a jungle?",
     answers: [{
             text: "Jungles have fewer trees and more sunlight",
             correct: true
@@ -281,7 +281,7 @@ let questions = [{
     ]
 },
 { // Question numer 15
-    question: "The deadly fish of the African jungle is the___.",
+    question: "Which dangerous fish lives in the African jungle?",
     answers: [{
             text: "Killer whale",
             correct: false
@@ -301,7 +301,7 @@ let questions = [{
     ]
 },
 { // Question numer 16
-    question: "The cockatoo is a kind of___.",
+    question: "What type of bird is a cockatoo?",
     answers: [{
             text: "Insect",
             correct: false
@@ -321,7 +321,7 @@ let questions = [{
     ]
 },
 { // Question numer 17
-    question: "The orangutan prefers___.",
+    question: "What does the orangutan like the most?",
     answers: [{
             text: "New Guinea rainforest",
             correct: false
@@ -341,7 +341,7 @@ let questions = [{
     ]
 },
 { // Question numer 18
-    question: "Where in the world do tigers live",
+    question: "In which part of the world do tigers make their home?",
     answers: [{
             text: "Africa",
             correct: false
@@ -361,7 +361,7 @@ let questions = [{
     ]
 },
 { // Question numer 19
-    question: "Who wrote 'The Jungle Book'?",
+    question: "Who is the author of 'The Jungle Book'?",
     answers: [{
             text: "JK Rowling",
             correct: false
@@ -381,7 +381,7 @@ let questions = [{
     ]
 },
 { // Question numer 20
-    question: "What percent of the worlds animals live in a jungle environment?",
+    question: "How many animals in the world live in the jungle?",
     answers: [{
             text: "Over 20%",
             correct: false

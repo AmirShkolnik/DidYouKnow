@@ -325,6 +325,8 @@ To clone this repository follow the below steps:
 
 ### Javascript
 
+[JSHint Validator](https://jshint.com/) 
+
 - ### Test results for questions.js
   ![JSHint Validator Results](doc/readme-images/JSHint-questions.png)
 
