@@ -14,14 +14,6 @@ const homeButton = document.getElementById("home"); // Get the home button eleme
 
 const scoreDisplay = document.getElementById("scoreDisplay");
 
-// Buttons event listeners
-document.getElementById('rules-btn').addEventListener('click', rules);
-document.getElementById('start-btn').addEventListener('click', start);
-document.getElementById('home').addEventListener('click', goBack);
-document.getElementById('back_btn').addEventListener('click', goBack);
-document.getElementById('rules_str_btn').addEventListener('click', start);
-
-
 // Hide the home button initially
 homeButton.style.display = "none";
 
@@ -217,3 +209,10 @@ function goBack() {
     'use strict';
     window.location.reload();
 }
+
+// Buttons event listeners
+document.getElementById('rules-btn').addEventListener('click', rules);
+document.getElementById('start-btn').addEventListener('click', start);
+document.getElementById('home').addEventListener('click', goBack);
+document.getElementById('back_btn').addEventListener('click', goBack);
+document.getElementById('rules_str_btn').addEventListener('click', start);

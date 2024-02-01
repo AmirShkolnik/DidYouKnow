@@ -28,10 +28,14 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
+  * [Layout](#layout)
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
+  * [Welcome](#welcome)
+  * [Rules](#rules)
+  * [Quiz](#quiz)
+  * [Score](#score)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -105,9 +109,11 @@ I used the [Jungle Color Palette](https://www.color-hex.com/color-palette/84872)
 
 [Google Fonts](https://fonts.google.com/) was used to import the chosen fonts for use in the site.
 
-I chose the Lemon Google Fonts for the site's font because it's a personal preference of mine. I find that the font has a visually appealing appearance that I personally enjoy. Additionally, it's easy to read, which is important for a quiz-style website where users need to quickly comprehend the text.
+I chose the [Lemon Google Fonts](https://fonts.google.com/specimen/Lemon?query=lemon&sort=alpha) for the site's font because it's a personal preference of mine. I find that the font has a visually appealing appearance that I personally enjoy. Additionally, it's easy to read, which is important for a quiz-style website where users need to quickly comprehend the text.
 
 Furthermore, I believe that the Lemon font fits perfectly with the style and aesthetic of the quiz. Its clean and modern look adds a touch of sophistication while still maintaining a playful vibe, which aligns well with the overall theme of the quiz. Overall, I selected the Lemon Google Fonts because I found it aesthetically pleasing, easy to read, and fitting for the style and tone of the quiz.
+
+Sans Serif is used as a backup font, in case for any reason the [Lemon](https://fonts.google.com/specimen/Lemon?query=lemon&sort=alpha) font isn't being imported into the site correctly.
 
 ![Lemon](doc/readme-images/Lemon.png)
 
@@ -123,9 +129,17 @@ Ultimately, the jungle background serves to enhance the user's participation in 
 
 ![Jungle](doc/readme-images/Jungle.png)
 
+### Layout
+
+The site is a single page with 4 steps/sections:
+  - Welcome area
+  - Rules area
+  - Quiz area
+  - Feedback and score area
+
 ### Wireframes
 
-The wireframe shows designs for iPad/tablet and desktop displays.
+The wireframe shows designs for iPad/tablet and desktop displays, but the finished site is responsive to all devices.
 
 #### 1. Welcome To The Jungle Quiz:
 
@@ -147,7 +161,9 @@ The wireframe shows designs for iPad/tablet and desktop displays.
 Features
 --------
 
-### Home Page
+![All Pages](doc/readme-images/amiresponsive-mix.png)
+
+### Welcome
 
 I chose the quiz features based on their simplicity and user-friendliness. 
 
@@ -160,17 +176,46 @@ Additionally, there are two large and colorful interactive buttons, making it ea
 
 By providing users with only two options to choose from, we aim to streamline the decision-making process, ensuring a hassle-free and enjoyable experience for all users.
 
-![Score](doc/readme-images/homepage.png)
+![Welcome Page](doc/readme-images/welcome.jpg)
 
-### General features on each page
+### Rules
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+If the user clicks the 'Rules' button, the instructions section will appear, allowing them to read the main rules of the quiz. Pressing the back button will return them to the welcome area.
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+![Rules](doc/readme-images/rules.png)
+
+### Quiz
+
+#### Questions and Answers
+
+If the user clicks the 'Start' button, the first question will appear. The user will then encounter 5 captivating questions randomly chosen from a database of 20 intriguing queries. 
+
+![Score](doc/readme-images/shuffle2.jpg)
+
+Upon selecting an answer, correct responses will shine in yellow, while incorrect ones will be highlighted in red. 
+
+![Questions and Answers](doc/readme-images/questions-and-answers.jpg)
+
+The score will be promptly revealed, and within 2 seconds, the user will proceed to the next question.
+
+![Questions and Answers](doc/readme-images/score3.jpg)
+### Score
+
+#### Score and Feedback
+
+After answering 5 questions, the user will be directed to the results page. Here, they will see their score and receive brief feedback. The feedback will vary depending on the user's results.
+
+![Score](doc/readme-images/feedback.jpg)
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+- User can create a username and track his score.
+- Shuffling the answer buttons.
+- Generating questions across various subjects so that users can choose the area they wish to test their knowledge in.
+- Establishing difficulty levels according to a timer.
+- Background images and sounds will change according to the questions.
+- Email JS to signup to newsletter.
+- Ability to play sounds.
 
 ### Accessibility
 
@@ -204,37 +249,37 @@ A great tip for this section is to include them as you use them, that way you wo
 
 ### Frameworks, Libraries & Programs Used
 
-* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+- [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
-* [Git](https://git-scm.com/) - For version control.
+- [Git](https://git-scm.com/) - For version control.
 
-* [Github](https://github.com/) - To save and store the files for the website.
+- [Github](https://github.com/) - To save and store the files for the website.
 
-* [GitPod](https://gitpod.io/) - IDE used to create the site.
+- [GitPod](https://gitpod.io/) - IDE used to create the site.
 
-* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+- [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-* [jQuery](https://jquery.com/) - A JavaScript library.
+- [jQuery](https://jquery.com/) - A JavaScript library.
 
-* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+- [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-* [TinyPNG](https://tinypng.com/) To compress images
+- [TinyPNG](https://tinypng.com/) To compress images
 
-* [Birme](https://www.birme.net/) To resize images and convert to webp format.
+- [Birme](https://www.birme.net/) To resize images and convert to webp format.
 
-* [Favicon.io](https://favicon.io/) To create favicon.
+- [Favicon.io](https://favicon.io/) To create favicon.
 
-* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-* [Shields.io](https://shields.io/) To add badges to the README
+- [Shields.io](https://shields.io/) To add badges to the README
 
-* [Open Trivia DataBase](https://opentdb.com/) - API used for the trivia questions.
+- [Open Trivia DataBase](https://opentdb.com/) - API used for the trivia questions.
 
-* [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - a google chrome extension to enable you to view JSON as raw data or parsed.
+- [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - a google chrome extension to enable you to view JSON as raw data or parsed.
 
-* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
+- [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
 
-* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+- [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
 
 Deployment & Local Development
@@ -303,8 +348,8 @@ At this juncture, I lack the knowledge on how to resolve this issue/warnings.
 - ### Test results for script.js
   ![JSHint Validator Results](doc/readme-images/JSHint-script.png)
 
-  Accessibility
-  -------------
+Accessibility
+-------------
 
 The site achieved a Lighthouse accessibility score of 100% for mobile and pc which confirms that the colors and fonts chosen are easy to read and accessible.
 
@@ -349,13 +394,15 @@ Credits and Resources Used
 - [Stack Overflow](https://stackoverflow.com/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - The following article was very helpful in understanding shuffling and the Fisher–Yates shuffle algorithm.
 - [JSchallenger](https://www.jschallenger.com/) 
-
+- [Java Script](https://javascript.info/bubbling-and-capturing) 
 
 ### Youtube Channels
 
 - [Programming with Mosh](https://www.youtube.com/watch?v=W6NZfCO5SIk) - JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour.
 - [SuperSimpleDev](https://www.youtube.com/watch?v=SBmSRK3feww) - JavaScript Full Course - Beginner to Pro.
 - [Telusko](https://www.youtube.com/watch?v=uDwSnnhl1Ng&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV) - JavaScript Tutorial.
+
+- [Code Institute](https://www.youtube.com/watch?v=ZH-w2Ht4jqU&t=29s) - Community Q&A: PP2 Project FAQ's
 
 ### Color scheme
 
