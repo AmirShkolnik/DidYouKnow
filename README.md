@@ -9,7 +9,7 @@ Test your knowledge and explore the mysteries of the jungle with 5 captivating q
 
 With each question, challenge yourself to uncover the secrets of the jungle while immersing yourself in the wonders of nature.
 
-Don't worry if you're not sure - take your best guess and click on an answer. Correct answers will shine in yellow, while incorrect ones will stand out in red.
+Don't worry if you're not sure - take your best guess and click on an answer. Correct answers will shine in yellow following the text "The Answer Is:", while incorrect ones will stand out in red.
 
 Your score will be revealed instantly, and in just 2 seconds, you'll move on to the next question. At the conclusion of your jungle adventure, receive feedback tailored to your performance. 
 
@@ -60,7 +60,9 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
   * [Browser Testing](browser-testing)
   * [Device Testing](#device-testing)
 
-* [Known Bugs](#known-bugs)
+* [Bugs](#bugs)
+  * [Solved Bugs](#solved-bugs)
+  * [Known Bugs](#known-bugs)
   
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -318,13 +320,6 @@ To clone this repository follow the below steps:
 
 
 ### Javascript
-When testing the JavaScript code for the first time, [JSHint Validator](https://jshint.com/) returned a few crucial errors because semicolons were missing in a couple of lines and I used an onclick() event in the index.html page. 
-
-After fixing all the errors, JSHint returned 23 warnings regarding ES6. 
-
-For example, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use 'moz').
-
-At this juncture, I lack the knowledge on how to resolve this issue/warnings.
 
 - ### Test results for questions.js
   ![JSHint Validator Results](doc/readme-images/JSHint-questions.png)
@@ -397,11 +392,24 @@ I checked and tested the website on various devices such as desktops, laptops, a
 #### iPhone Devices:
 - The website was tested on iPhone 10 and 14 Pro. While it is responsive as planned, the quiz is not functioning as expected. 
 
+Bugs
+----
 
-Known Bugs
-----------
+### Solved Bugs
 
-**For an unknown reason, a random answer is being highlighted in yellow before the user even selects an answer. This bug must be resolved so iPhone users can enjoy the quiz too**.
+- When testing the JavaScript code for the first time, [JSHint Validator](https://jshint.com/) returned a few crucial errors because semicolons were missing in a couple of lines.
+
+After fixing all the errors, JSHint returned 23 warnings regarding ES6. 
+
+For example, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use 'moz').
+
+At this juncture, I lack the knowledge on how to resolve this issue/warnings.
+
+- I implemented an onclick() event in the buttons on the index.html page, resolving it by using the getElementById method.
+
+### Known Bugs
+
+- For an unknown reason, a random answer is being highlighted in yellow before the user even selects an answer. This bug must be resolved so iPhone users can enjoy the quiz too.
 
 ![iPhone Devices](doc/readme-images/iphone.jpg)
 
