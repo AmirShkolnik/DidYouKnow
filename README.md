@@ -371,6 +371,7 @@ The quiz was thoroughly tested by friends and family to ensure everything functi
 - The correct final score was displayed once the quiz concluded.
 - Appropriate feedback was presented at the end of the quiz.
 - Buttons effects operated as expected.
+- The 2-second function is functioning correctly; the user moves on to the next question 2 seconds after clicking the answer button
 
 ### Browser Testing
 
