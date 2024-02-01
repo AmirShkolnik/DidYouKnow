@@ -216,7 +216,11 @@ The score will be promptly revealed, and within 2 seconds, the user will proceed
 
 #### Score and Feedback
 
-After answering 5 questions, the user will be directed to the results page. Here, they will see their score and receive brief feedback. The feedback will vary depending on the user's results.
+- After answering 5 questions, the user will be directed to the results page. Here, they will see their score and receive brief feedback. The feedback will vary depending on the user's results.
+
+- The user will be presented with two options:
+  - Home
+  - Play Again
 
 ![Score](doc/readme-images/feedback.jpg)
 
