@@ -226,7 +226,7 @@ h2 {
     }
     
     #question_area_box {
-        height: 580px;
+        height: 620px;
         margin: 10px auto 0;
     }
 
@@ -267,7 +267,7 @@ h2 {
 }
 
 #question_area_box {
-    height: 620px;
+    height: 680px;
     margin: 10px auto 0;
 }
 
@@ -344,7 +344,7 @@ h2 {
     }
     
     #question_area_box {
-        max-width: 550px;
+        max-width: 750px;
         height: 700px;
         margin: 40px auto 0;
     }
