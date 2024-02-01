@@ -54,6 +54,11 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
     * [CSS](#css)
     * [Javascript](#javascript)
   * [Accessibility](#accessibility)
+  * [Buttons Testing](#buttons-testing)
+  * [Quiz Testing](#quiz-testing)
+  * [Browser Testing](browser-testing)
+  * [Device Testing](#device-testing)
+  * [Responsiveness](#responsiveness)
   
 
 * [Credits](#credits)
@@ -331,42 +336,64 @@ Accessibility
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
-
-The site achieved a Lighthouse accessibility score of 100% for mobile and pc which confirms that the colors and fonts chosen are easy to read and accessible.
+The website attained a Lighthouse accessibility score of 100% on both mobile and desktop, affirming that the selected colors and fonts are easily readable and accessible.
 
 - ### Lighthouse Score For PC
+
+[Lighthouse Score For Mobile](https://pagespeed.web.dev/analysis/https-amirshkolnik-github-io-JungleQuiz/o5sdsclq4r?form_factor=desktop)
 
 ![Lighthouse Score For PC](doc/readme-images/lighthouse-pc.png)
 
 - ### Lighthouse Score For Mobile
 
+[Lighthouse Score For Mobile](https://pagespeed.web.dev/analysis/https-amirshkolnik-github-io-JungleQuiz/o5sdsclq4r?form_factor=mobile)
+
 ![Lighthouse Score For Mobile](doc/readme-images/lighthouse-mobile.png)
 
-- ### Form Testing
-- I checked the form to make sure you can't send it unless you fill in the necessary information like your name, email address, phone number and "What Do You Wish To Order?".
+### Buttons Testing
 
-- ### Links Testing
-- I checked all the navigation links to make sure they take the user to the right parts of the website.
-- I manually tested the links on the menu page to ensure users go to the order form correctly.
-- I tested the order form to make sure that after submitting, users are taken to the thank you page.
-- I also inspected the Social Media links at the bottom of each page to make sure they take the user to the right page and open in a new tab.
+- I verified all the navigation buttons to ensure they direct users to the correct sections of the website.
+- I conducted manual testing on each button to guarantee users can navigate the quiz correctly.
+- I manually tested the answers to confirm that the scoring displays the accurate result.
+- I manually verified that the correct and incorrect answers are displayed with the appropriate colors and effects.
+- I tested the score and feedback section to ensure that upon completing the quiz, users are directed to the final page and presented with the correct result along with the appropriate feedback.
+
+### Quiz Testing
+
+The quiz was thoroughly tested by friends and family to ensure everything functioned as intended, including the following:
+
+- Questions were shuffled.
+- No question appeared twice in the same quiz.
+- The quiz displayed a different selection of questions each time it was played.
+- The quiz concluded after all 5 questions were answered.
+- The score was accurately tallied and ceased when the quiz ended.
+- Correct answers were highlighted in yellow, while incorrect ones were distinguished in red.
+- The correct final score was displayed once the quiz concluded.
+- Appropriate feedback was presented at the end of the quiz.
+- Buttons effects operated as expected.
 
 ### Browser Testing
-- I checked the website on Google Chrome, Firefox, Microsoft Edge, and Safari browsers, and everything was fine with no problems.
+
+I checked the website on Google Chrome, Firefox, Microsoft Edge, opera and Safari browsers and everything was fine with no problems.
+
     
 ### Device Testing
-- I checked and tested the website on different devices like Desktop, Laptop, Samsung S21, and 14A, iPhone 12 PRO, and 14 PRO to make sure it works well on different screen sizes.
+I checked and tested the website on various devices such as desktops, laptops, and mobiles to ensure the quiz functions well on different screen sizes.
 
-The website worked as I wanted it to. I also used Chrome developer tools on all the devices to test the responsive design, and it stayed intact for all sizes.
+#### Laptop and Desktop:
+The website is responsive as planned, and the quiz is working as expected.
+
+#### Android Mobiles:
+The website was tested on Samsung S9, S21, and 14A. It is responsive as planned, and the quiz is working as it should.
+
+#### iPhone Devices:
+The website was tested on iPhone 10 and 14 Pro. While it is responsive as planned, the quiz is not functioning as expected. 
+
+**For an unknown reason, a random answer is being highlighted in yellow before the user even selects an answer. This bug must be resolved so iPhone users can enjoy the quiz too**.
+
+![iPhone Devices](doc/readme-images/iphone.jpg)
+
+### Responsiveness
 
 - I also tried the website on the following websites to test its responsiveness:
 
@@ -380,16 +407,25 @@ Friends and family were asked to check the site and documents for any problems o
 Credits and Resources Used
 -----------------------------
 
-- [W3Schools](https://www.w3schools.com/)  
+Great websites for general knowledge, training, and practical solutions.
+
+- [W3Schools](https://www.w3schools.com/) 
 - [Stack Overflow](https://stackoverflow.com/)
-- [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - The following article was very helpful in understanding shuffling and the Fisher–Yates shuffle algorithm.
-- [JSchallenger](https://www.jschallenger.com/) 
+- [JSchallenger](https://www.jschallenger.com/)
+
+The following article was very helpful in understanding shuffling and the Fisher–Yates shuffle algorithm.
+- [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
+
+The following article was very helpful in understanding events.
+
 - [Java Script](https://javascript.info/bubbling-and-capturing) 
 
 ### Youtube Channels
 
 - [Programming with Mosh](https://www.youtube.com/watch?v=W6NZfCO5SIk) - JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour.
+
 - [SuperSimpleDev](https://www.youtube.com/watch?v=SBmSRK3feww) - JavaScript Full Course - Beginner to Pro.
+
 - [Telusko](https://www.youtube.com/watch?v=uDwSnnhl1Ng&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV) - JavaScript Tutorial.
 
 - [Code Institute](https://www.youtube.com/watch?v=ZH-w2Ht4jqU&t=29s) - Community Q&A: PP2 Project FAQ's
@@ -401,6 +437,7 @@ Credits and Resources Used
 ### Code Used
 
 - The basic code for building the quiz was inspired by the following tutorial which I then adapted for my own Jungle Quiz. - [How To Make Quiz App Using JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8) by GreatStack.
+
 - I used the Fisher Yates Shuffle in order to shuffle the questions and answer from a 20 questions database which I learned about in this tutorial - [Shuffle an array](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array).
 
 ### Content
