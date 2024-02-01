@@ -37,7 +37,6 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
   * [Quiz](#quiz)
   * [Score](#score)
   * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -50,6 +49,12 @@ The live link can be found here - [Jungle Quiz](https://amirshkolnik.github.io/J
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  * [Validator Testing](#validator-testing)
+    * [HTML](#html)
+    * [CSS](#css)
+    * [Javascript](#javascript)
+  * [Accessibility](#accessibility)
+  
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -217,18 +222,6 @@ After answering 5 questions, the user will be directed to the results page. Here
 - Email JS to signup to newsletter.
 - Ability to play sounds.
 
-### Accessibility
-
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
-
 ## Technologies Used
 
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
@@ -350,6 +343,18 @@ At this juncture, I lack the knowledge on how to resolve this issue/warnings.
 
 Accessibility
 -------------
+
+### Accessibility
+
+Be an amazing developer and get used to thinking about accessibility in all of your projects!
+
+This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
+
+Have you used icons and added aria-labels to enable screen readers to understand these?
+Have you ensured your site meets the minimum contrast requirements?
+Have you chosen fonts that are dyslexia/accessible friendly?
+
+Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
 
 The site achieved a Lighthouse accessibility score of 100% for mobile and pc which confirms that the colors and fonts chosen are easy to read and accessible.
 
