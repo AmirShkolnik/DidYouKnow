@@ -221,8 +221,11 @@ h2 {
     }
     
     #rules_box {
-        height: 800px;
-        margin: 10px auto 0;
+        height: 670px;
+        max-width: 300px;
+        margin: 5px auto 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
     #question_area_box {
@@ -253,16 +256,19 @@ h2 {
 
 /* Media query: Mobile devices. (min-width:321px - max-width:480px) */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
 
 .quiz_area {
-    max-width: 300px;
+    max-width: 380px;
     margin: 10px auto 0;
     height: 450px;
 }
 
 #rules_box {
-    height: 620px;
+    height: 650px;
+    max-width: 380px;
+    padding-left: 5px;
+        padding-right: 5px;
     margin: 10px auto 0;
 }
 
