@@ -156,19 +156,19 @@ The wireframe shows designs for iPad/tablet and desktop displays, but the finish
 
 #### 1. Welcome To The Jungle Quiz:
 
-![Home Page](/doc/readme-images/Welcome.png)
+![Home Page](/doc/readme-images/welcome-1.png)
 
 #### 2. Follow The Rules:
 
-![Rules](/doc/readme-images/Rules.png)
+![Rules](/doc/readme-images/Follow-The-Rules-2.png)
 
 #### 3. Quiz Questions:
 
-![Questions](/doc/readme-images/Questions.png)
+![Questions](/doc/readme-images/questions-2.png)
 
 #### 4. Score:
 
-![Score](/doc/readme-images/Score.png)
+![Score](/doc/readme-images/score-4.png)
 
 
 Features
@@ -327,9 +327,6 @@ To clone this repository follow the below steps:
 
 [JSHint Validator](https://jshint.com/) 
 
-- ### Test results for questions.js
-  ![JSHint Validator Results](doc/readme-images/JSHint-questions.png)
-
 - ### Test results for script.js
   ![JSHint Validator Results](doc/readme-images/JSHint-script.png)
 
@@ -412,6 +409,23 @@ For example, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS exte
 At this juncture, I lack the knowledge on how to resolve this issue/warnings.
 
 - I implemented an onclick() event in the buttons on the index.html page, resolving it by using the getElementById method.
+
+- At first, I created two separate files for questions and styles. This resulted in an undefined question warning when validating. My mentor recommended combining these two files into one for better practice.
+
+- In the media query for small and medium screens (min-width: 769px - max-width: 1024px), the correct answer effect was presented on top of the other questions. I fixed that by adding:
+
+.answerbutton {
+    margin: 15px 0;
+}
+
+- For the same screens, the height was mistakenly set to 7000px. I changed it to 700px.
+
+#question_area_box {
+    max-width: 750px;
+    height: 700px;
+    margin: 40px auto 0;
+}
+
 
 ### Known Bugs
 

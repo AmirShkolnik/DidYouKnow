@@ -321,7 +321,7 @@ h2 {
     }
 
 
-/* Media query: Small screens, laptops.. (min-width:769px - max-width:1024px) */
+/* Media query: Small and Medium screens, laptops.. (min-width:769px - max-width:1024px) */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px)
 {
@@ -339,7 +339,7 @@ h2 {
     
     #rules_box {
         max-width: 700px;
-        height: 7000px;
+        height: 700px;
         margin: 10px auto 0;
     }
     
@@ -357,6 +357,9 @@ h2 {
     #question {
         font-size: 26px;
         margin-bottom: 20px;
+    }
+    .answerbutton {
+        margin: 15px 0;
     }
     }
 
@@ -401,7 +404,7 @@ h2 {
     }
 
     .answerbutton {
-        margin: 15px 0;
+        margin: 16px 0;
     }
     }
 
