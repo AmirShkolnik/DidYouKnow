@@ -160,7 +160,7 @@ The wireframe shows designs for iPad/tablet and desktop displays, but the finish
 
 #### 2. Follow The Rules:
 
-![Rules](/doc/readme-images/Follow-The-Rules-2.png)
+![Rules](/doc/readme-images/Follow-The-Rules.png)
 
 #### 3. Quiz Questions:
 
