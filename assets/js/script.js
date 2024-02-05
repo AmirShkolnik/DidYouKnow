@@ -1,4 +1,9 @@
-// Jungle quiz questions
+/**
+ * Credit to this tutorial which I adapted for my own quiz: 
+ * https://www.youtube.com/watch?v=PBcqGxrr9g8
+ */
+
+//Jungle quiz questions
 //Question numer 1
 let questions = [{
     question: "Which animal holds the title for being the largest in the jungle?",
@@ -427,6 +432,7 @@ let score = 0;
 
 
 // Shuffle the answers array function - using Fisher Yates Shuffle
+// Credit to this tutorial which I adapted for my own quiz: 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
     let currentIndex = array.length,
